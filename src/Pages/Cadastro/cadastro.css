@@ -1,0 +1,46 @@
+.Info_Cadastro{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.Logo_Cadastre-se{
+    display: flex;
+    gap: 100px;
+}
+.Info_Table{
+    background-color: #F2F2F2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.Info_Cadastro img{
+    width: 47px;
+    height: 58px;
+}
+.Info_Table_Dados{
+    display: grid;
+    grid-template-columns: repeat(2,200px);
+    column-gap: 50px;
+    row-gap: 15px;
+}
+.cadastro-form input{
+    width: 250px;
+    height: 30px;
+}
+.Area_Button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+.Button_Cadastrar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    background: #F2293D;
+    color: #F2F2F2;
+    width: 300px;
+    height: 60px;
+    border-radius: 10px;
+}

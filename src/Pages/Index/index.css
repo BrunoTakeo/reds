@@ -38,9 +38,23 @@
     border-radius: 10px;
     color: #1C1C1C;
 }
-.index_login button{
+.Botao_Entrar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
     background: #1C1C1C;
     color: #F2F2F2;
     width: 325px;
     height: 55px;
+}
+.FCadastro{
+    color: #F2F2F2;
+    display: flex;
+    gap: 5px;
+}
+.YCadastro{
+    color: #F2F2F2;
+    text-decoration: none;
+    font-weight: bold;
 }
