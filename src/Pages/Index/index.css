@@ -1,0 +1,46 @@
+.index{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(110vh - 34.5px);
+    padding: 30px;
+    overflow: none;
+    background: #BE1E2D;
+    gap: 50px;
+    background-image: url(../../assets/img/MAKERS.svg);
+    background-size: cover;
+}
+.index_logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 25px;
+}
+.index_logo h2{
+    color: #F2F2F2;
+}
+.index_login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 375px;
+    height: 150px;
+    background: #F2F2F2;
+    border-radius: 10px;
+}
+.index_login input{
+    text-align: center;
+    width: 325px;
+    height: 55px;
+    border-radius: 10px;
+    color: #1C1C1C;
+}
+.index_login button{
+    background: #1C1C1C;
+    color: #F2F2F2;
+    width: 325px;
+    height: 55px;
+}
