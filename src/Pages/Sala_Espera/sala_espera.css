@@ -1,0 +1,31 @@
+.Sa_Es{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(110vh - 34.5px);
+    overflow: none;
+    background: #1C1C1C;
+    color: #F2F2F2;
+}
+.Jogadores{
+    display: flex;
+    gap: 100px;
+    padding: 150px;
+}
+.Jogador{
+    width: 100px;
+    height: 100px;
+}
+.Jogador label{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    border-style:solid;
+}
+.Jogador p{
+    padding: 10px;
+}

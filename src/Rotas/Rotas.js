@@ -9,8 +9,9 @@ const Rotas = () => {
     <Fragment>
         <Routes>
             <Route path='/' element={<Index/>}/>
+            <Route path='/sala_espera' element={<Sala_Espera/>}/>
             <Route element={<PrivateRoute/>}>
-              <Route path='/sala_espera' element={<Sala_Espera/>}/>
+            
             </Route>
         </Routes>
     </Fragment>
