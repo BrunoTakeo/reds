@@ -13,73 +13,73 @@ const Cadastro = () => {
                     <img src={IMAGEM_LOGO_B}/>
                 </div>
                 <div className='Info_Table_Dados'>
-                    <form>
-                        <div className='cadastro'>
-                            <div className='cadastro-usuario'>
-                            <div className='cadastro-form'>
-                                <label
-                                htmlFor="nomeUsuario"
-                                >
-                            Nome de Usuário:
-                                </label>
-                                <input type='text'>
-                                </input>
-                            </div>
-                            </div>
+                    <div className='cadastro-1'>
+                        <div className='cadastro-usuario'>
+                        <div className='cadastro-form'>
+                            <label
+                            htmlFor="nomeUsuario"
+                            >
+                        Nome de Usuário:
+                            </label>
+                            <input type='text'>
+                            </input>
                         </div>
-                        <div className='cadastro'>
-                            <div className='cadastro-usuario'>
-                            <div className='cadastro-form'>
-                                <label
-                                htmlFor="email"
-                                >
-                            Email:
-                                </label>
-                                <input type='text'>
-                                </input>
-                            </div>
-                            </div>
                         </div>
-                        <div className='cadastro'>
-                            <div className='cadastro-usuario'>
-                            <div className='cadastro-form'>
-                                <label
-                                htmlFor="senha"
-                                >
-                            Senha:
-                                </label>
-                                <input type='text'>
-                                </input>
-                            </div>
-                            </div>
+                    </div>
+                    <div className='cadastro-2'>
+                        <div className='cadastro-usuario'>
+                        <div className='cadastro-form'>
+                            <label
+                            htmlFor="email"
+                            >
+                        Email:
+                            </label>
+                            <input type='text'>
+                            </input>
                         </div>
-                        <div className='cadastro'>
-                            <div className='cadastro-usuario'>
-                            <div className='cadastro-form'>
-                                <label
-                                htmlFor='confirmSenha'
-                                >
-                            Confirmar Senha:
-                                </label>
-                                <input type='text'>
-                                </input>
-                            </div>
-                            </div>
                         </div>
-                    </form>
+                    </div>
+                    <div className='cadastro-3'>
+                        <div className='cadastro-usuario'>
+                        <div className='cadastro-form'>
+                            <label
+                            htmlFor="senha"
+                            >
+                        Senha:
+                            </label>
+                            <input type='password'>
+                            </input>
+                        </div>
+                        </div>
+                    </div>
+                    <div className='cadastro-4'>
+                        <div className='cadastro-usuario'>
+                        <div className='cadastro-form'>
+                            <label
+                            htmlFor='confirmSenha'
+                            >
+                        Confirmar Senha:
+                            </label>
+                            <input type='password'>
+                            </input>
+                        </div>
+                        </div>
+                    </div>
                 </div>
                 <div className='Area_Button'>
                     <Link className='Button_Cadastrar'>
                         Cadastrar
                     </Link>
                 </div>
-                Ja possui cadastro?
-                <Link to='/cadastro'>
-                Faça seu login
-                </Link>
+                <div className='PossuiCadastro'>
+                    Ja possui cadastro?
+                    <Link className='FazLogin' to='/'>
+                    Faça seu login
+                    </Link>
+                </div>
             </div>
             <div className='Poster'>
-                <h1>Olá, bem-vindo ao R.E.D.S</h1>
+                <h1>Olá, bem-vindo <br/> ao R.E.D.S</h1>
             </div>
         </div>
     </Fragment>
