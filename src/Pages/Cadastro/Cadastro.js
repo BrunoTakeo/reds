@@ -19,7 +19,7 @@ const Cadastro = () => {
                             <label
                             htmlFor="nomeUsuario"
                             >
-                        Nome de Usuário:
+                        Nome de Usuário
                             </label>
                             <input type='text'>
                             </input>
@@ -32,7 +32,7 @@ const Cadastro = () => {
                             <label
                             htmlFor="email"
                             >
-                        Email:
+                        Email
                             </label>
                             <input type='text'>
                             </input>
@@ -45,7 +45,7 @@ const Cadastro = () => {
                             <label
                             htmlFor="senha"
                             >
-                        Senha:
+                        Senha
                             </label>
                             <input type='password'>
                             </input>
@@ -58,7 +58,7 @@ const Cadastro = () => {
                             <label
                             htmlFor='confirmSenha'
                             >
-                        Confirmar Senha:
+                        Confirmar Senha
                             </label>
                             <input type='password'>
                             </input>
@@ -73,7 +73,7 @@ const Cadastro = () => {
                 </div>
                 <div className='PossuiCadastro'>
                     Ja possui cadastro?
-                    <Link className='FazLogin' to='/'>
+                    <Link className='FazLogin' to='/login'>
                     Faça seu login
                     </Link>
                 </div>

@@ -1,0 +1,46 @@
+.Info_Login{
+    display: flex;
+    justify-content: center;
+    min-height: calc(110vh - 34.5px);
+}
+.Poster-Bem_vindo{
+    width: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../../assets/img/WALLPAPER.png);
+    background-position: center;
+    background-size: cover;
+}
+.Poster-Bem_vindo h1{
+    font-size: 66px;
+    color: #F2F2F2;
+}
+.Tabela_Login{
+    width: 700px;
+    background-color: #F2F2F2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.Logo_Login{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding: 100px;
+    padding-bottom: calc(20px - 50px);
+    padding-top: calc(20px - 100px);
+}
+.Logo_Login img{
+    width: 47px;
+    height: 58px;
+}
+.Tabela_Login_Dados{
+    display: flex;
+    flex-direction: column;
+}
+.Login_Dados{
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+}

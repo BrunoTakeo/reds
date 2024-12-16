@@ -4,6 +4,7 @@ import PrivateRoute from './PrivateRoute'
 import Index from '../Pages/Index/Index'
 import Sala_Espera from '../Pages/Sala_Espera/Sala_Espera'
 import Cadastro from '../Pages/Cadastro/Cadastro'
+import Login from '../Pages/Login/Login'
 
 const Rotas = () => {
   return (
@@ -12,6 +13,7 @@ const Rotas = () => {
             <Route path='/' element={<Index/>}/>
             <Route path='/sala_espera' element={<Sala_Espera/>}/>
             <Route path='/cadastro' element={<Cadastro/>}/>
+            <Route path='/login' element={<Login/>}/>
             <Route element={<PrivateRoute/>}>
 
             </Route>
