@@ -17,14 +17,14 @@ const Login = () => {
                 </div>
                 <div className='Tabela_Login_Dados'>
                     <div className='Login_Dados'>
-                        <div>
+                        <div className='Form-Login'>
                             <label>
                                 Email
                             </label>
                             <input type='text'>
                             </input>
                         </div>
-                        <div>
+                        <div className='Form-Login'>
                             <label>
                                 Senha
                             </label>
@@ -32,11 +32,17 @@ const Login = () => {
                             </input>
                         </div>                        
                     </div>
-                    <div>
-                        <input type='checkbox'>
-                        </input>
-                        Ficar na conta
-                        <Link>
+                    <div className='Form-Extra'>
+                        <div className='Ficar-Conta'>
+                            <label>
+                                <input type='checkbox'>
+                                </input>
+                                <p>
+                                    Ficar na conta 
+                                </p> 
+                            </label>
+                        </div>
+                        <Link className='MudarSenha'>
                         Esqueceu sua senha?
                         </Link>
                     </div>

@@ -8,6 +8,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    background:#1C1C1C;
     background-image: url(../../assets/img/WALLPAPER.png);
     background-position: center;
     background-size: cover;
@@ -27,9 +28,12 @@
     display: flex;
     align-items: center;
     justify-content:space-between;
-    padding: 100px;
+    padding: 70px;
     padding-bottom: calc(20px - 50px);
-    padding-top: calc(20px - 100px);
+    padding-top: 100px;
+}
+.Logo_Login h3{
+    font-size: 45px;
 }
 .Logo_Login img{
     width: 47px;
@@ -43,4 +47,86 @@
     display: flex;
     flex-direction: column;
     padding: 50px;
+}
+.Form-Login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+}
+.Form-Login input{
+    border-radius: 10px;
+    width: 500px;
+    height: 40px;
+    background: #F2F2F2;
+}
+.Form-Login input:focus{
+    box-shadow: 2px 2px 13px #454545;
+}
+.Form-Extra{
+    display: flex;
+    justify-content: space-around;
+}
+.Ficar-Conta label{
+    display: flex;
+    align-items: center;
+}
+.Ficar-Conta label input{
+    accent-color: #F2293D;
+}
+.Ficar-Conta label p{
+    padding-left: 10px;
+    padding-top: 10px;
+    cursor: pointer;
+}
+.MudarSenha{
+    transition: 0.1s;
+    padding-top: 10px;
+    text-decoration: none;
+    color: #1C1C1C;
+}
+.MudarSenha:hover{
+    transition: 0.1s;
+    color:#F2293D;
+}
+.Area_Button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    padding-bottom: 50px;
+}
+.Button_Login{
+    transition: 0.35s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    background: #F2293D;
+    color: #F2F2F2;
+    width: 500px;
+    height: 60px;
+    border-radius: 10px;
+}
+.Button_Login:hover{
+    transition: 0.35s;
+    box-shadow: 3px 5px 13px #454545;
+    background: #1C1C1C;
+}
+.NPossuiCadastro{
+    display: flex;
+    text-align: start;
+    padding-left: 80px;
+    padding-bottom: 100px;
+}
+.FazCadastro{
+    transition: 0.1s;
+    padding-left: 10px;
+    text-decoration: none;
+    color: #F2293D;
+}
+.FazCadastro:hover{
+    transition: 0.1s;
+    color:#1C1C1C;
 }
