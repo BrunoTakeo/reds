@@ -67,7 +67,7 @@ const Cadastro = () => {
                     </div>
                 </div>
                 <div className='Area_Button'>
-                    <Link className='Button_Cadastrar'>
+                    <Link className='Button_Cadastrar' to='/home'>
                         Cadastrar
                     </Link>
                 </div>

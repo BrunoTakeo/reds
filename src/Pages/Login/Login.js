@@ -48,7 +48,7 @@ const Login = () => {
                     </div>
                 </div>
                 <div className='Area_Button'>
-                    <Link className='Button_Login'>
+                    <Link className='Button_Login' to='/home'>
                         Login
                     </Link>
                 </div>
