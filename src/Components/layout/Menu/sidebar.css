@@ -1,0 +1,14 @@
+.app-sidebar {
+	z-index: 1;
+	top: 0;
+	background: #2f323a;
+	margin-top: 70px;
+	position: fixed;
+	left:0;
+	min-width: 220px;
+	max-width: 220px;
+	height: 100vh;
+	transition: 0.5s;
+	overflow: auto;
+    flex-shrink: 0;
+}

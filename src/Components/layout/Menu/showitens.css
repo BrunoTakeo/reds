@@ -1,0 +1,42 @@
+.app-sidebar-item{
+    padding: .75em 1em;
+    display: block;
+    transition: background-color .15s;
+    border-radius: 5px;
+}
+.app-sidebar-item:hover{
+  background-color: #F2293D;
+}
+.Titulo_Icones{
+    display: flex;
+    font-size: 1.2em;
+    justify-content: space-between;
+}
+.Titulo_Icones span{
+    color:#1C1C1C;
+}
+.Titulo_Icones span i{
+    display: inline-block;
+    color:#F2F2F2;
+    width: 1.5em;
+}
+.Titulo_Icones .toggle-Abrir_Fechar{
+    cursor: pointer;
+    transition: transform .3s;
+    color:#F2F2F2
+}
+.app-sidebar-item.open > .Titulo_Icones .toggle-Abrir_Fechar{
+    transform: rotate(180deg);
+}
+.Toggle-Conteudo{
+    padding-top: .25em;
+    height: 0;
+    overflow: hidden;
+}
+.app-sidebar-item.open > .Toggle-Conteudo{
+    height: auto;
+}
+.app-sidebar-item.plain{
+    color: #F2F2F2;
+    text-decoration: none;
+}

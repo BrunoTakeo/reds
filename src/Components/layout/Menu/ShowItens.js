@@ -1,14 +1,15 @@
 import React, { Fragment, useState } from 'react'
 import * as BsIcons from 'react-icons/bs'
 import { Link } from 'react-router-dom';
+import './showitens.css'
 
 const ShowItens = ({item}) => {
     const [open,setOpen]=useState(false);
   if (item.sub_menu){
     return(
         <Fragment>
-            <div>
-                <div>
+            <div className={open ? 'app-sidebar-item open':'app-sidebar-item'}>
+                <div className='Titulo_Icones'>
                     <span>
                         {
                             item.icon && <i>{item.icon}</i>
@@ -18,11 +19,11 @@ const ShowItens = ({item}) => {
                         }
                     </span>
                     <i>
-                        <BsIcons.BsChevronBarDown className='app-toggle-icon'
+                        <BsIcons.BsChevronBarDown className='toggle-Abrir_Fechar'
                         onClick={()=>setOpen(!open)}/>
                     </i>
                 </div>
-                <div>
+                <div className='Toggle-Conteudo'>
                     {
                         item.sub_menu.map((sub,index)=>{
                             return(
@@ -37,7 +38,7 @@ const ShowItens = ({item}) => {
   }else{
     return(
         <Fragment>
-            <Link to={item.path || '#'}>
+            <Link to={item.path || '#'} className='app-sidebar-item plain'>
             {
                 item.icon && <i>{item.icon}</i>
             }
