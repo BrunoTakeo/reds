@@ -1,5 +1,7 @@
 import React, { Fragment, useState } from 'react'
 import SideBar from './Menu/SideBar';
+import UpBar from './Header/Header'
+import './layout.css'
 
 const Layout = ({children}) => {
 
@@ -11,8 +13,9 @@ const Layout = ({children}) => {
   console.log(toggle);
   return (
     <Fragment>
+      <UpBar toggle_header={toggleClick}/>
       <SideBar toggle_sidebar={toggle}/>
-        <main>
+        <main className={toggle ? 'app-toggle active':'app-content'}>
           {children}
         </main>
     </Fragment>

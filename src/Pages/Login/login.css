@@ -62,6 +62,7 @@
     background: #F2F2F2;
 }
 .Form-Login input:focus{
+    transition: 0.2s;
     box-shadow: 2px 2px 13px #454545;
 }
 .Form-Extra{
@@ -90,7 +91,7 @@
     transition: 0.1s;
     color:#F2293D;
 }
-.Area_Button{
+.Area_Button_Login{
     display: flex;
     justify-content: center;
     align-items: center;

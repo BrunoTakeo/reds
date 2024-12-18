@@ -1,8 +1,8 @@
 .app-sidebar-item{
     padding: .75em 1em;
     display: block;
-    transition: background-color .15s;
-    border-radius: 5px;
+    background-color: #1C1C1C;
+    transition:.15s;
 }
 .app-sidebar-item:hover{
   background-color: #F2293D;
@@ -39,4 +39,14 @@
 .app-sidebar-item.plain{
     color: #F2F2F2;
     text-decoration: none;
+    text-align: center;
+}
+.app-sidebar-item.plain:hover{
+    text-decoration:none;
+}
+.app-sidebar-item.plain i{
+    display: inline-block;
+    width: 1.7em;
+    margin-bottom: 5%;
+    margin-top: 5%;
 }

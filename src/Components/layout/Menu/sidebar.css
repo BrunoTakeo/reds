@@ -1,8 +1,7 @@
 .app-sidebar {
-	z-index: 1;
+	z-index: 3;
 	top: 0;
-	background: #2f323a;
-	margin-top: 70px;
+	background: #1C1C1C;
 	position: fixed;
 	left:0;
 	min-width: 220px;
@@ -11,4 +10,9 @@
 	transition: 0.5s;
 	overflow: auto;
     flex-shrink: 0;
+}
+.app-sidebar h2{
+	color: #F2F2F2;
+	margin-top: 2rem;
+	margin-bottom: 4rem;
 }

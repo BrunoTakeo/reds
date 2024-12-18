@@ -1,0 +1,8 @@
+.app-content {
+    min-height: calc(110vh - 60px);
+    z-index: 0;
+    margin-left: 220px;
+    background-color: #F2F2F2;
+    transition: 0.5s;
+    transition-property: left;
+}

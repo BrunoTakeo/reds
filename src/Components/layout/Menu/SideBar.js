@@ -1,6 +1,7 @@
 import React, { Fragment } from 'react'
 import itens from './ShowItensDados'
 import ShowItens from './ShowItens'
+import './sidebar.css'
 
 const SideBar = ({toggle_sidebar}) => {
   return (
