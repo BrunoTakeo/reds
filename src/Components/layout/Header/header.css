@@ -31,7 +31,7 @@
     top: 10px;
 }
 img{
-    height: 80%;
+    width: 10%;
     cursor: pointer;
     font-size: 13px;
     justify-content: center;
@@ -40,8 +40,25 @@ img{
 }
 .app-profile span{
     margin-left: 10px;
+    margin-top: 10px;
     padding-left: 10px;
     padding-right: 80px;
-    font-size: 22px;
+    font-size: 15px;
     color: #1C1C1C;
 }
+.Menu-Mobile{
+    display: none;
+}
+/* @media screen and (max-width: 760px) {
+    .Menu-Mobile{
+        position: absolute;
+        margin-left: 220px;
+        margin-top: 18px;
+        font-size: 20px;
+        cursor: pointer;
+        display: flex;
+    }
+    .Menu-Mobile:focus, .Menu-Mobile:hover{
+        text-decoration: none;
+    }
+} */
