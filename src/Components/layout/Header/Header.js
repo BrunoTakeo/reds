@@ -3,6 +3,7 @@ import * as  FaIcons  from 'react-icons/fa';
 import * as GiIcons from 'react-icons/gi'
 import './header.css';
 import { IMAGEM_PERFIL } from '../../../Configs/config';
+import { Link } from 'react-router-dom';
 
 const Header = ({toggle_header}) => {
     const [toggle,setToggle] = useState(true);
@@ -24,7 +25,7 @@ const Header = ({toggle_header}) => {
                         <GiIcons.GiHamburgerMenu onClick={() => toggleClick()}/>
                     </i>
                 </div>
-                <div className='app-profile'>
+                <Link className='app-profile' to="/perfil">
                     <img src={IMAGEM_PERFIL} alt="foto"/>
                     <span>Clara Soares</span>
                     <div className='app-notification'>
@@ -32,7 +33,7 @@ const Header = ({toggle_header}) => {
                             <FaIcons.FaBell/>
                         </i>
                     </div>
-                </div>
+                </Link>
             </header>
         </Fragment>
     )

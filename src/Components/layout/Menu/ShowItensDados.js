@@ -27,7 +27,7 @@ const ShowItensDados = [
     {
         page:'Perfil',
         icon:<CgIcon.CgProfile/>,
-        path:'/Perfil'
+        path:'/perfil'
     }
 ]
 export default ShowItensDados;

@@ -8,14 +8,22 @@
     background: #1C1C1C;
     color: #F2F2F2;
 }
+.Sa_Es h2, .Sa_Es h3, .Jogador p {
+    font-family: "Short Stack", serif;
+}
+.Sa_Es h3 {
+    margin-top: 30px;
+}
 .Jogadores{
     display: flex;
     gap: 100px;
     padding: 150px;
 }
 .Jogador{
-    width: 100px;
-    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .Jogador label{
     display: flex;
@@ -26,6 +34,9 @@
     border-radius: 50px;
     border-style:solid;
 }
+.Jogador label img {
+    width: auto;
+}
 .Jogador p{
-    padding: 10px;
+    margin-top: 25px;
 }
