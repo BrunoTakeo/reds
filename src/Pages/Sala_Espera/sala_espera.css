@@ -1,42 +1,48 @@
-.Sa_Es{
+.waiting-container{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    min-height: calc(110vh - 34.5px);
-    overflow: none;
+    justify-content: space-between;
+    width: 100%;
+    min-height: 100vh;
+    padding: 40px 0;
     background: #1C1C1C;
     color: #F2F2F2;
 }
-.Sa_Es h2, .Sa_Es h3, .Jogador p {
+.waiting-count {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    letter-spacing: 4px;
+}
+.waiting-count h2, .waiting-count h3, .player-name p {
     font-family: "Short Stack", serif;
 }
-.Sa_Es h3 {
-    margin-top: 30px;
-}
-.Jogadores{
+.players{
     display: flex;
-    gap: 100px;
-    padding: 150px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 30px;
+    min-height: 400px;
+    gap: 20px;
 }
-.Jogador{
+.player{
+    width: 150px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 20px;
 }
-.Jogador label{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.player-photo{
     width: 100px;
     height: 100px;
+    display: flex;
+    justify-content: center;
     border-radius: 50px;
     border-style:solid;
 }
-.Jogador label img {
-    width: auto;
-}
-.Jogador p{
-    margin-top: 25px;
+.player-photo img {
+    width: 35px;
 }

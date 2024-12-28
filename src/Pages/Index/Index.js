@@ -6,14 +6,14 @@ import { Link } from 'react-router-dom'
 const Index = () => {
   return (
     <Fragment>
-      <div className='index'>
-        <div className='index_logo'>
+      <div className='index-container'>
+        <div className='index-logo'>
           <img src={IMAGEM_LOGO_W}/>
-          <h2>
+          <h1>
             REDS
-          </h2>
+          </h1>
         </div>
-        <div className='index_login'>
+        <div className='index-enter-code'>
           <input
           id=''
           type='text'
@@ -22,14 +22,14 @@ const Index = () => {
           <Link to='/sala_espera'
                 type="button"
                 title='Entrar Na Sala'
-                className='Botao_Entrar'
+                className='enter-button'
           >
               Entrar
           </Link>
         </div>
-        <div className='FCadastro'>
+        <div className='link-cadastro'>
           Uma melhor experiência?
-          <Link to='/cadastro' className='YCadastro'>
+          <Link to='/cadastro' className='cadastro-label'>
             Faça seu cadastro.
           </Link>
         </div>

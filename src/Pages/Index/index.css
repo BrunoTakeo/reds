@@ -1,61 +1,71 @@
-.index{
+.index-container{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: calc(110vh - 34.5px);
-    padding: 30px;
-    overflow: none;
+    width: 100%;
+    min-height: 100vh;
     background: #BE1E2D;
-    gap: 50px;
+    gap: 20px;
     background-image: url(../../assets/img/MAKERS.svg);
     background-size: cover;
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
-.index_logo{
+.index-logo{
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 25px;
+    justify-content: center;
+    width: 375px;
+    gap: 40px;
+    letter-spacing: 8px;
 }
-.index_logo h2{
+.index-logo img {
+    width: 20%;
+}
+.index-logo h1{
     font-family: "Short Stack", sans-serif;
     color: #F2F2F2;
+    margin-top: 15px;
 }
-.index_login{
+.index-enter-code{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 20px;
     width: 375px;
-    height: 150px;
+    height: 170px;
     background: #F2F2F2;
     border-radius: 10px;
 }
-.index_login input{
+.index-enter-code input{
     text-align: center;
-    width: 325px;
+    width: 90%;
     height: 55px;
     border-radius: 10px;
     color: #1C1C1C;
 }
-.Botao_Entrar{
+.enter-button{
     display: flex;
     justify-content: center;
     align-items: center;
     text-decoration: none;
     background: #1C1C1C;
     color: #F2F2F2;
-    width: 325px;
+    width: 90%;
     height: 55px;
+    border-radius: 10px;
 }
-.FCadastro{
+.link-cadastro{
     color: #F2F2F2;
     display: flex;
     gap: 5px;
+    font-weight: 300;
 }
-.YCadastro{
+.cadastro-label{
     color: #F2F2F2;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 600;
 }
