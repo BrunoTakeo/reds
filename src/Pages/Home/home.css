@@ -101,7 +101,7 @@
     align-items: center;
     justify-content: space-between;
     margin: 65px 0 65px 0;
-    padding: 45px 70px;
+    padding: 30px 50px;
     color: #F2F2F2;
     background-color: #F2293D;
     border-radius: 20px;
@@ -113,7 +113,7 @@
 }
 .Button_Jogo {
     background-color: #F2F2F2;
-    padding: 30px 40px;
+    padding: 20px 30px;
     text-decoration: none;
     color: #1C1C1C;
     font-weight: 700;

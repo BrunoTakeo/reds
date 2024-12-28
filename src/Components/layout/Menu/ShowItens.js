@@ -9,7 +9,7 @@ const ShowItens = ({item}) => {
     return(
         <Fragment>
             <div className={open ? 'app-sidebar-item open':'app-sidebar-item'}>
-                <div className='Titulo_Icones'>
+                <div className='toggle-icons'>
                     <span>
                         {
                             item.icon && <i>{item.icon}</i>
@@ -19,11 +19,11 @@ const ShowItens = ({item}) => {
                         }
                     </span>
                     <i>
-                        <BsIcons.BsChevronBarDown className='toggle-Abrir_Fechar'
+                        <BsIcons.BsChevronBarDown className='toggle-open-close'
                         onClick={()=>setOpen(!open)}/>
                     </i>
                 </div>
-                <div className='Toggle-Conteudo'>
+                <div className='toggle-content'>
                     {
                         item.sub_menu.map((sub,index)=>{
                             return(

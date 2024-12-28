@@ -1,39 +1,59 @@
 .app-sidebar-item{
+    display: flex; 
+    align-items: center; 
     padding: .75em 1em;
     display: block;
     background-color: #1C1C1C;
     transition:.15s;
+    position: relative;
+}
+.app-sidebar-item i {
+    margin-right: 10px;
+    font-size: 1.2em;
 }
 .app-sidebar-item:hover{
-  background-color: #F2293D;
+  background-color: #ff000025;
 }
-.Titulo_Icones{
+.app-sidebar-item::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 5px;
+    background: transparent;
+    transition: 0.3s ease;
+}
+.app-sidebar-item:hover::before {
+    background: #F2293D;
+}
+.toggle-icons{
     display: flex;
     font-size: 1.2em;
     justify-content: space-between;
 }
-.Titulo_Icones span{
+.toggle-icons span{
     color:#1C1C1C;
 }
-.Titulo_Icones span i{
+.toggle-icons span i{
     display: inline-block;
     color:#F2F2F2;
     width: 1.5em;
 }
-.Titulo_Icones .toggle-Abrir_Fechar{
+.toggle-icons .toggle-open-close{
     cursor: pointer;
     transition: transform .3s;
     color:#F2F2F2
 }
-.app-sidebar-item.open > .Titulo_Icones .toggle-Abrir_Fechar{
+.app-sidebar-item.open > .toggle-icons .toggle-open-close{
     transform: rotate(180deg);
 }
-.Toggle-Conteudo{
+.toggle-content{
     padding-top: .25em;
     height: 0;
     overflow: hidden;
 }
-.app-sidebar-item.open > .Toggle-Conteudo{
+.app-sidebar-item.open > .toggle-content{
     height: auto;
 }
 .app-sidebar-item.plain{
