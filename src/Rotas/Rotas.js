@@ -7,6 +7,7 @@ import Jogo from '../Pages/Jogo/Jogo'
 import Cadastro from '../Pages/Cadastro/Cadastro'
 import Login from '../Pages/Login/Login'
 import Home from '../Pages/Home/Home'
+import Perfil from '../Pages/Perfil/Perfil'
 
 
 const Rotas = () => {
@@ -20,6 +21,7 @@ const Rotas = () => {
             <Route path='/login' element={<Login/>}/>
             <Route element={<PrivateRoute/>}>
               <Route path='/home' element={<Home/>}/>
+              <Route path='/perfil' element={<Perfil/>}/>
             </Route>
         </Routes>
     </Fragment>
