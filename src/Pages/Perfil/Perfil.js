@@ -9,16 +9,16 @@ import './perfil.css'
 const Perfil = () => {
   return (
     <Fragment>
-        <div>
-            <div className='PagePerfil'>
+        <div className='PagePerfil'>
+            <div className='Perfil'>
                 <div>
                     <img src={IMAGEM_PERFIL}/>
                     <IoIcons.IoGameControllerOutline/>
                     <TbIcons.TbCrown/>
                     <VscIcons.VscPercentage/>
                 </div>
-                <div>
-                    <div className=''>
+                <div className='PerfilDados'>
+                    <div className='Dados-1'>
                         <label
                         htmlFor="nomeUsuario"
                         >
@@ -27,7 +27,7 @@ const Perfil = () => {
                         <input type='text'>
                         </input>
                     </div>
-                    <div className=''>
+                    <div className='Dados-2'>
                         <label
                         htmlFor="nomeUsuario"
                         >
@@ -36,7 +36,7 @@ const Perfil = () => {
                         <input type='text'>
                         </input>
                     </div>
-                    <div className=''>
+                    <div className='Dados-3'>
                         <label
                         htmlFor="nomeUsuario"
                         >
@@ -45,7 +45,7 @@ const Perfil = () => {
                         <input type='text'>
                         </input>
                     </div>
-                    <div className=''>
+                    <div className='Dados-4'>
                         <label
                         htmlFor="nomeUsuario"
                         >
@@ -54,12 +54,16 @@ const Perfil = () => {
                         <input type='date'>
                         </input>
                     </div>
-                    <Link>
-                        Alterar Senha
-                    </Link>
-                    <Link>
-                        Salvar
-                    </Link>
+                    <div className='Dados-button-1'>
+                        <Link>
+                            Alterar Senha
+                        </Link>
+                    </div>
+                    <div className='Dados-button-2'>
+                        <Link>
+                            Salvar
+                        </Link>
+                    </div>
                 </div>
             </div>
         </div>
