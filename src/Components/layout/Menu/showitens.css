@@ -1,7 +1,7 @@
 .app-sidebar-item{
     display: flex; 
     align-items: center; 
-    padding: .75em 1em;
+    padding: .75em 2em;
     display: block;
     background-color: #1C1C1C;
     transition:.15s;
@@ -59,7 +59,7 @@
 .app-sidebar-item.plain{
     color: #F2F2F2;
     text-decoration: none;
-    text-align: center;
+    text-align: left;
     font-family: "Short Stack", sans-serif;
 }
 .app-sidebar-item.plain:hover{

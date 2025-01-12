@@ -9,8 +9,8 @@
     gap: 20px;
     background-image: url(../../assets/img/MAKERS.svg);
     background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
-    background-size: 100%;
 }
 .index-logo{
     display: flex;

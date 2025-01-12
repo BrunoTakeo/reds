@@ -67,7 +67,7 @@ const Home = () => {
           </div>
           <div className='CTI'>
             <span>
-              Pronto Para Começar ?
+              Pronto para começar ?
             </span>
             <Link className='Button_Jogo' to='/sala'>
               Jogar agora
