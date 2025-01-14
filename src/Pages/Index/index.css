@@ -11,14 +11,14 @@
     box-sizing: border-box;
 }
 .index-container{
+    width: 100%;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    min-height: 100vh;
-    background: var(--vermelho-escuro);
     gap: 20px;
+    background: var(--vermelho-escuro);
     background-image: url(../../assets/img/makers.svg);
     background-size: cover;
     background-position: center;
@@ -80,4 +80,15 @@
     color: var(--branco);
     text-decoration: none;
     font-weight: 600;
+}
+
+@media screen and (max-width: 460px){
+    .index-logo, .index-cod-entrar {
+        width: 85%;
+    }
+    .link-cadastro {
+        flex-direction: column;
+        gap: 0;
+        letter-spacing: 0.5px;
+    }
 }

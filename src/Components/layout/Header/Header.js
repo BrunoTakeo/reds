@@ -16,9 +16,7 @@ const Header = ({toggle_header}) => {
         <Fragment>
             <header className='Area_Header'>
                 <div className='Area'>
-                    <h4>
-                        Home
-                    </h4>
+                    <h4> Home </h4>
                 </div>
                 <div className='Menu-Mobile'> 
                     <i>

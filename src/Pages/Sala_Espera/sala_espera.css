@@ -44,7 +44,7 @@
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    padding: 30px;
+    padding: 45px 15px;
     min-height: 300px;
     gap: 20px;
 }

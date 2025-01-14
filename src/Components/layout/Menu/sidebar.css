@@ -17,3 +17,9 @@
 	margin-bottom: 4rem;
 	font-family: "Short Stack", sans-serif;
 }
+
+@media screen and (max-width: 800px){
+    .app-sidebar {
+        min-width: 100%;
+    }
+}

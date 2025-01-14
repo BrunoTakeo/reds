@@ -23,6 +23,7 @@
 }
 .Area h4 {
     font-weight: 700;
+    margin-bottom: 0;
 }
 .app-profile{
     position: absolute;

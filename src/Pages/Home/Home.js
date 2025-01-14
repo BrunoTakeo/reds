@@ -19,6 +19,7 @@ const Home = () => {
           <div className='como-jogar'>
             <div className='logo-tutorial'>
               <img src={IMAGEM_TUTORIAL_JOGO}/>
+              <h1>COMO JOGAR?</h1>
             </div>
             <div className='como-jogar-conteudo'>  
               <div className='topico-container'>
