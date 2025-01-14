@@ -1,3 +1,15 @@
+:root {
+    --vermelho-escuro: #BE1E2D ;
+    --vermelho-claro: #F2293D;
+    --preto: #1C1C1C; 
+    --branco: #F2F2F2 ;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 .index-container{
     display: flex;
     flex-direction: column;
@@ -5,7 +17,7 @@
     align-items: center;
     width: 100%;
     min-height: 100vh;
-    background: #BE1E2D;
+    background: var(--vermelho-escuro);
     gap: 20px;
     background-image: url(../../assets/img/makers.svg);
     background-size: cover;
@@ -26,10 +38,10 @@
 }
 .index-logo h1{
     font-family: "Short Stack", sans-serif;
-    color: #F2F2F2;
+    color: var(--branco);
     margin-top: 15px;
 }
-.index-enter-code{
+.index-cod-entrar{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -37,35 +49,35 @@
     gap: 20px;
     width: 375px;
     height: 170px;
-    background: #F2F2F2;
+    background: var(--branco);
     border-radius: 10px;
 }
-.index-enter-code input{
+.index-cod-entrar input{
     text-align: center;
     width: 90%;
     height: 55px;
     border-radius: 10px;
-    color: #1C1C1C;
+    color: var(--preto);
 }
-.enter-button{
+.entrar-botao{
     display: flex;
     justify-content: center;
     align-items: center;
     text-decoration: none;
     background: #1C1C1C;
-    color: #F2F2F2;
+    color: var(--branco);
     width: 90%;
     height: 55px;
     border-radius: 10px;
 }
 .link-cadastro{
-    color: #F2F2F2;
+    color: var(--branco);
     display: flex;
     gap: 5px;
     font-weight: 300;
 }
 .cadastro-label{
-    color: #F2F2F2;
+    color: var(--branco);
     text-decoration: none;
     font-weight: 600;
 }

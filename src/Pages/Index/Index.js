@@ -13,7 +13,7 @@ const Index = () => {
             REDS
           </h1>
         </div>
-        <div className='index-enter-code'>
+        <div className='index-cod-entrar'>
           <input
           id=''
           type='text'
@@ -22,7 +22,7 @@ const Index = () => {
           <Link to='/sala_espera'
                 type="button"
                 title='Entrar Na Sala'
-                className='enter-button'
+                className='entrar-botao'
           >
               Entrar
           </Link>
