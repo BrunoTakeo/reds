@@ -49,7 +49,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(../../assets/img/BACKGROUND.svg);
+    background-image: url(../../assets/img/background.svg);
     background-size: cover;
     background-repeat: no-repeat;
     font-size: 45px;
