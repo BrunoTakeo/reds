@@ -1,7 +1,14 @@
+:root {
+    --vermelho-escuro: #BE1E2D ;
+    --vermelho-claro: #F2293D;
+    --preto: #1C1C1C; 
+    --branco: #F2F2F2 ;
+}
+
 .app-sidebar {
-	z-index: 3;
+	z-index: 1;
 	top: 0;
-	background: #1C1C1C;
+	background: var(--preto);
 	position: fixed;
 	left:0;
 	min-width: 220px;
@@ -12,14 +19,18 @@
     flex-shrink: 0;
 }
 .app-sidebar h2{
-	color: #F2F2F2;
+	color: var(--branco);
 	margin-top: 2rem;
 	margin-bottom: 4rem;
 	font-family: "Short Stack", sans-serif;
 }
 
-/* @media screen and (max-width: 800px){
+.app-sidebar.active {
+	margin-left: -220px;
+}
+
+@media screen and (max-width: 800px){
     .app-sidebar {
-        min-width: 100%;
+		margin-top: 100px;
     }
-} */
+}

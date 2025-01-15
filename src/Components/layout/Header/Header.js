@@ -15,23 +15,25 @@ const Header = ({toggle_header}) => {
     return (
         <Fragment>
             <header className='area-header'>
-                <div className='area'>
-                    <h4> Home </h4>
-                </div>
-                <div className='menu-mobile'> 
-                    <i>
-                        <GiIcons.GiHamburgerMenu onClick={() => toggleClick()}/>
-                    </i>
-                </div>
-                <Link className='app-profile' to="/perfil">
-                    <img src={IMAGEM_PERFIL} alt="foto"/>
-                    <span>Clara Soares</span>
-                    <div className='app-notification'>
+                <div className='header-container'>
+                    <div className='area'>
+                        <h4> Home </h4>
+                    </div>
+                    <div className='menu-mobile'> 
                         <i>
-                            <FaIcons.FaBell/>
+                            <GiIcons.GiHamburgerMenu onClick={() => toggleClick()}/>
                         </i>
                     </div>
-                </Link>
+                    <Link className='app-profile' to="/perfil">
+                        <img src={IMAGEM_PERFIL} alt="foto"/>
+                        <span>Clara Soares</span>
+                        {/* <div className='app-notification'>
+                            <i>
+                                <FaIcons.FaBell/>
+                            </i>
+                        </div> */}
+                    </Link>
+                </div>
             </header>
         </Fragment>
     )
