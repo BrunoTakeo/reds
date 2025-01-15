@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-.Area_Header{
+.area-header{
     display: flex;
     align-items: center;
     z-index: 1;
@@ -14,14 +14,14 @@
     height: 100px;
     box-shadow: 0px 5px 15px 0px rgba(28,28,28,0.1);
 }
-.Area{
+.area{
     padding-left: 285px;
     color: #1C1C1C;
     margin: 0;
     text-transform: uppercase;
     font-size: 15px;
 }
-.Area h4 {
+.area h4 {
     font-weight: 700;
     margin-bottom: 0;
 }
@@ -55,11 +55,11 @@ img{
 .app-notification i {
     color: #1C1C1C;
 }
-.Menu-Mobile{
+.menu-mobile{
     display: none;
 }
-/* @media screen and (max-width: 760px) {
-    .Menu-Mobile{
+@media screen and (max-width: 800px) {
+    .menu-mobile{
         position: absolute;
         margin-left: 220px;
         margin-top: 18px;
@@ -67,7 +67,8 @@ img{
         cursor: pointer;
         display: flex;
     }
-    .Menu-Mobile:focus, .Menu-Mobile:hover{
+    .menu-mobile
+    .menu-mobile:focus, .menu-mobile:hover{
         text-decoration: none;
     }
-} */
+}

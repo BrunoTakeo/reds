@@ -50,6 +50,7 @@
 }
 
 .bem-vindo-conteudo p {
+    margin-bottom: 0;
     font-family: "Short Stack", sans-serif;
 }
 
@@ -191,6 +192,14 @@
     }
 }
 
+@media screen and (max-width: 850px) {
+    .cti {
+        flex-direction: column;
+        padding: 30px;
+        gap: 30px;
+    }
+}
+
 @media screen and (max-width: 800px){
     .bem-vindo {
         height: 300px;
@@ -200,5 +209,33 @@
 @media screen and (max-width: 750px){
     .como-jogar-conteudo {
         width: 100%;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .logo-tutorial {
+        width: 90%;
+        padding: 40px 0;
+    }
+    .logo-tutorial img {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .topico {
+        flex-direction: column;
+    }
+    .texto {
+        margin-left: 0;
+    }
+    .texto p {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .bem-vindo-conteudo, .cti span {
+        font-size: 28px;
     }
 }

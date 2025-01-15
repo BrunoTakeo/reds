@@ -14,11 +14,11 @@ const Header = ({toggle_header}) => {
     }
     return (
         <Fragment>
-            <header className='Area_Header'>
-                <div className='Area'>
+            <header className='area-header'>
+                <div className='area'>
                     <h4> Home </h4>
                 </div>
-                <div className='Menu-Mobile'> 
+                <div className='menu-mobile'> 
                     <i>
                         <GiIcons.GiHamburgerMenu onClick={() => toggleClick()}/>
                     </i>

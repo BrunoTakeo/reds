@@ -70,7 +70,11 @@
     margin-top: 5%;
 }
 
-@media screen and (max-width: 800px){
+.app-sidebar.active {
+	margin-left: -220px;
+}
+
+/* @media screen and (max-width: 800px){
     .app-sidebar-item {
         padding: 0;
     }
@@ -84,4 +88,4 @@
         margin-top: 3.5%;
         margin-bottom: 3.5%;
     }
-}
+} */
