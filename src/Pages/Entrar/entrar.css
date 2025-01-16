@@ -10,7 +10,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-.index-container{
+.entrar-container{
     width: 100%;
     height: 100vh;
     display: flex;
@@ -24,7 +24,7 @@
     background-position: center;
     background-repeat: no-repeat;
 }
-.index-logo{
+.entrar-logo{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -33,15 +33,15 @@
     gap: 40px;
     letter-spacing: 8px;
 }
-.index-logo img {
+.entrar-logo img {
     width: 20%;
 }
-.index-logo h1{
+.entrar-logo h1{
     font-family: "Short Stack", sans-serif;
     color: var(--branco);
     margin-top: 15px;
 }
-.index-cod-entrar{
+.entrar-nome{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -52,7 +52,7 @@
     background: var(--branco);
     border-radius: 10px;
 }
-.index-cod-entrar input{
+.entrar-nome input{
     text-align: center;
     width: 90%;
     height: 55px;
@@ -84,7 +84,7 @@
 }
 
 @media screen and (max-width: 460px){
-    .index-logo, .index-cod-entrar {
+    .entrar-logo, .entrar-nome {
         width: 85%;
     }
     .link-cadastro {

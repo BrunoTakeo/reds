@@ -2,6 +2,7 @@ import React, { Fragment } from 'react'
 import { Route, Routes } from 'react-router-dom'
 import PrivateRoute from './PrivateRoute'
 import Index from '../Pages/Index/Index'
+import Entrar from '../Pages/Entrar/Entrar'
 import Sala_Espera from '../Pages/Sala_Espera/Sala_Espera'
 import Jogo from '../Pages/Jogo/Jogo'
 import Cadastro from '../Pages/Cadastro/Cadastro'
@@ -15,6 +16,7 @@ const Rotas = () => {
     <Fragment>
         <Routes>
             <Route path='/' element={<Index/>}/>
+            <Route path='/entrar' element={<Entrar/>}/>
             <Route path='/sala_espera' element={<Sala_Espera/>}/>
             <Route path='/jogo' element={<Jogo/>}/>
             <Route path='/cadastro' element={<Cadastro/>}/>
