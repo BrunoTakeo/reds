@@ -15,6 +15,7 @@
 }
 
 body {
+    background-color: var(--branco) !important;
     font-size: 18px;
 }
 
@@ -37,7 +38,7 @@ body {
     align-items: center;
     justify-content: center;
     gap: 50px;
-    padding: 80px;
+    padding: 10.5%;
     color: var(--branco);
     font-weight: 600;
 }
@@ -57,6 +58,11 @@ body {
 .vida {
     display: flex;
     align-items: center;
+}
+
+.vida p,
+.enunciado p {
+    margin-bottom: 0;
 }
 
 .cronometro {
@@ -97,7 +103,7 @@ body {
     flex-direction: column;
     justify-content: center;
     gap: 20px;
-    padding: 100px;
+    padding: 12.5%;
     color: var(--preto);
 }
 
@@ -107,6 +113,7 @@ body {
     display: flex;
     align-items: center;
     border-radius: 20px;
+    gap: 30px;
     padding: 20px;
     transition: all 0.2s;
 }
@@ -127,13 +134,13 @@ body {
 
 .texto {
     display: flex;
-    margin-left: 50px;
     font-weight: 300;
 }
 
 .letra p,
 .texto p {
     margin-bottom: 0;
+    line-height: normal !important;
 }
 
 .letra:hover {
@@ -143,4 +150,66 @@ body {
 .alternativa-container:hover {
     background-color: var(--vermelho-claro);
     color: var(--branco);
+    box-shadow: none;
+}
+
+@media screen and (max-width: 950px) {
+    .timer {
+        width: 75%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .enunciado {
+        font-size: 1.5em;
+    }
+}
+
+@media screen and (max-width: 615px) {
+    .jogo {
+        flex-direction: column;
+    }
+
+    .pergunta-conteudo {
+        gap: 20px;
+        padding: 2% 10.5% 8%;
+    }
+
+    .jogo-pergunta-topo {
+        display: none;
+    }
+
+    .jogo-pergunta,
+    .jogo-alternativas {
+        width: 100%;
+    }
+
+    .timer {
+        width: 55%;
+    }
+
+    .alternativas-conteudo {
+        gap: 10px;
+        padding: 5%;
+    }
+
+    .texto {
+        font-size: 0.85em;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .pergunta-conteudo {
+        gap: 0;
+    }
+
+    .timer {
+        font-size: 1.6em;
+    }
+
+    .letra {
+        width: 45px;
+        height: 45px;
+        font-size: 1em;
+    }
 }

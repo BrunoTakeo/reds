@@ -9,6 +9,7 @@ import Cadastro from '../Pages/Cadastro/Cadastro'
 import Login from '../Pages/Login/Login'
 import Home from '../Pages/Home/Home'
 import Perfil from '../Pages/Perfil/Perfil'
+import Sala from '../Pages/Sala/Sala'
 
 
 const Rotas = () => {
@@ -24,6 +25,7 @@ const Rotas = () => {
             <Route element={<PrivateRoute/>}>
               <Route path='/home' element={<Home/>}/>
               <Route path='/perfil' element={<Perfil/>}/>
+              <Route path='/sala' element={<Sala/>}/>
             </Route>
         </Routes>
     </Fragment>
