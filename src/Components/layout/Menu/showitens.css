@@ -1,9 +1,14 @@
+:root {
+    --vermelho-escuro: #BE1E2D ;
+    --vermelho-claro: #F2293D;
+    --preto: #1C1C1C; 
+    --branco: #F2F2F2 ;
+}
+
 .app-sidebar-item{
-    display: flex; 
-    align-items: center; 
-    padding: .75em 1em;
+    padding: .75em 2em;
     display: block;
-    background-color: #1C1C1C;
+    background-color: var(--preto);
     transition:.15s;
     position: relative;
 }
@@ -25,7 +30,7 @@
     transition: 0.3s ease;
 }
 .app-sidebar-item:hover::before {
-    background: #F2293D;
+    background: var(--vermelho-claro);
 }
 .toggle-icons{
     display: flex;
@@ -37,13 +42,13 @@
 }
 .toggle-icons span i{
     display: inline-block;
-    color:#F2F2F2;
+    color: var(--branco);
     width: 1.5em;
 }
 .toggle-icons .toggle-open-close{
     cursor: pointer;
     transition: transform .3s;
-    color:#F2F2F2
+    color: var(--branco)
 }
 .app-sidebar-item.open > .toggle-icons .toggle-open-close{
     transform: rotate(180deg);
@@ -57,9 +62,9 @@
     height: auto;
 }
 .app-sidebar-item.plain{
-    color: #F2F2F2;
+    color: var(--branco);
     text-decoration: none;
-    text-align: center;
+    text-align: left;
     font-family: "Short Stack", sans-serif;
 }
 .app-sidebar-item.plain:hover{
@@ -71,3 +76,19 @@
     margin-bottom: 5%;
     margin-top: 5%;
 }
+
+/* @media screen and (max-width: 800px){
+    .app-sidebar-item {
+        padding: 0;
+    }
+    .app-sidebar-item.plain {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+    }
+    .app-sidebar-item.plain i {
+        margin-top: 3.5%;
+        margin-bottom: 3.5%;
+    }
+} */

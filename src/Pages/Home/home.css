@@ -1,7 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Short+Stack&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-.Page_Home{
+:root {
+    --vermelho-escuro: #BE1E2D;
+    --vermelho-claro: #F2293D;
+    --preto: #1C1C1C;
+    --branco: #F2F2F2;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--branco);
+    scroll-behavior: smooth;
+}
+
+.home-container {
+    width: 85%;
     max-width: 1000px;
     padding-top: 150px;
     z-index: 1;
@@ -11,62 +30,82 @@
     margin: auto;
 }
 
-.Bem_Vindo {
+.bem-vindo {
     width: 100%;
     height: 400px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #1C1C1C;
+    background-color: var(--preto);
     border-radius: 10px;
 }
-.Bem_Vindo_Conteudo {
+
+.bem-vindo-conteudo {
     width: 100%;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #F2F2F2;
+    color: var(--branco);
     font-size: 36px;
     border-radius: 10px;
-    background-image: url("../../assets/img/WELCOME_BANNER.png") ;
+    background-image: url("../../assets/img/welcome_banner.png");
     background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
 }
-.Bem_Vindo_Conteudo p {
+
+.bem-vindo-conteudo p {
+    margin-bottom: 0;
     font-family: "Short Stack", sans-serif;
 }
-.Veja_Mais {
+
+.veja-mais {
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     font-weight: 500;
-    margin: 40px 0 40px 0; 
+    margin: 40px 0 40px 0;
 }
-.Como_Jogar {
+
+.como-jogar {
     width: 100%;
     height: 700px;
     display: flex;
-    margin: 65px 0 65px 0;
+    margin: 65px 0;
 }
-.Logo_Tutorial {
+
+.logo-tutorial {
     width: 50%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-right: 6px solid #1C1C1C;
+    padding: 40px;
+    gap: 20px;
+    border-right: 6px solid var(--preto);
 }
-.Logo_Tutorial img {
+
+.logo-tutorial img {
     width: auto;
     cursor: auto;
     border-radius: 0;
 }
-.Como_Jogar_Conteudo {
+
+.logo-tutorial h1 {
+    font-family: "Short Stack", sans-serif;
+    letter-spacing: 2px;
+    line-height: 75px;
+    font-size: 60px;
+}
+
+.como-jogar-conteudo {
     width: 50%;
 }
-.Topico_Container {
+
+.topico-container {
     width: 100%;
     height: 100%;
     display: flex;
@@ -74,48 +113,145 @@
     justify-content: center;
     gap: 40px;
     padding: 50px 10px 50px 50px;
-    color: #1C1C1C;
+    color: var(--preto);
 }
-.Topico {
+
+.topico {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 25px;
 }
-.Texto p {
+
+.texto p {
     text-align: left;
     line-height: 30px;
 }
-.Topico_Icon {
+
+.topico-icon {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.Topico_Icon img {
+
+.topico-icon img {
     width: 30px;
 }
-.CTI {
+
+.cti {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin: 65px 0 65px 0;
     padding: 30px 50px;
-    color: #F2F2F2;
-    background-color: #F2293D;
+    color: var(--branco);
+    background-color: var(--vermelho-claro);
     border-radius: 20px;
-    letter-spacing: 1px;
+    letter-spacing: 0.5px;
 }
-.CTI span {
+
+.cti span {
     font-size: 36px;
     font-weight: 700;
 }
-.Button_Jogo {
-    background-color: #F2F2F2;
+
+.jogo-botao {
+    background-color: var(--branco);
     padding: 20px 30px;
     text-decoration: none;
-    color: #1C1C1C;
+    color: var(--preto);
     font-weight: 700;
     border-radius: 20px;
+}
+
+@media screen and (max-width: 1160px) {
+    .como-jogar {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+    }
+
+    .logo-tutorial {
+        width: 85%;
+        flex-direction: row;
+        padding: 20px;
+        border-right: none;
+        border-bottom: 6px solid var(--preto);
+    }
+
+    .logo-tutorial img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .logo-tutorial h1 {
+        font-size: 28px;
+        line-height: 0;
+        margin-bottom: 0;
+    }
+
+    .como-jogar-conteudo {
+        width: 85%;
+    }
+
+    .topico-container {
+        align-items: center;
+        padding: 40px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .cti {
+        flex-direction: column;
+        padding: 30px;
+        gap: 30px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .bem-vindo {
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .como-jogar-conteudo {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .logo-tutorial {
+        width: 90%;
+        padding: 40px 0;
+    }
+
+    .logo-tutorial img {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .topico {
+        flex-direction: column;
+    }
+
+    .texto {
+        margin-left: 0;
+    }
+
+    .texto p {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 375px) {
+
+    .bem-vindo-conteudo,
+    .cti span {
+        font-size: 28px;
+    }
 }

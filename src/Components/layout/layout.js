@@ -14,10 +14,13 @@ const Layout = ({children}) => {
   return (
     <Fragment>
       <UpBar toggle_header={toggleClick}/>
+      
       <SideBar toggle_sidebar={toggle}/>
-        <main className={toggle ? 'app-toggle active':'app-content'}>
-          {children}
-        </main>
+      
+      <main className={toggle ? 'app-toggle active':'app-content'}>
+        {children}
+      </main>
+    
     </Fragment>
   )
 }

@@ -35,7 +35,7 @@ const ShowItens = ({item}) => {
             </div>
         </Fragment>
     )
-  }else{
+  } else{
     return(
         <Fragment>
             <Link to={item.path || '#'} className='app-sidebar-item plain'>

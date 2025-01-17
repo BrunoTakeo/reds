@@ -1,36 +1,30 @@
 import React, { Fragment } from 'react'
-import './index.css'
+import './entrar.css'
 import { IMAGEM_LOGO_W } from '../../Configs/config'
 import { Link } from 'react-router-dom'
 
 const Index = () => {
   return (
     <Fragment>
-      <div className='index-container'>
-        <div className='index-logo'>
+      <div className='entrar-container'>
+        <div className='entrar-logo'>
           <img src={IMAGEM_LOGO_W}/>
           <h1>
             REDS
           </h1>
         </div>
-        <div className='index-cod-entrar'>
+        <div className='entrar-nome'>
           <input
           id=''
           type='text'
-          placeholder='Código da sala'
+          placeholder='Escreva seu nome'
           />
-          <Link to='/entrar'
+          <Link to='/sala_espera'
                 type="button"
                 title='Entrar Na Sala'
                 className='entrar-botao'
           >
               Entrar
-          </Link>
-        </div>
-        <div className='link-cadastro'>
-          Uma melhor experiência?
-          <Link to='/cadastro' className='cadastro-label'>
-            Faça seu cadastro.
           </Link>
         </div>
       </div>

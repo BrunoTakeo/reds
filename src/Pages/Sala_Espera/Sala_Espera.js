@@ -5,57 +5,57 @@ import './sala_espera.css'
 const Sala_Espera = () => {
   return (
     <Fragment>
-      <div className='waiting-container'>
-        <div className='waiting-count'>
+      <div className='sala-espera-container'>
+        <div className='contagem-jogadores'>
           <h2>Esperando jogadores...</h2>
           <h3>2/6</h3>
         </div>
-        <div className='players'>
-          <div className='player'>
-            <div className='player-photo'>
+        <div className='jogadores'>
+          <div className='jogador'>
+            <div className='jogador-foto'>
               <img src={IMAGEM_ICON}/>
             </div>
-            <div className='player-name'>
+            <div className='jogador-nome'>
               <p>Brunotakeo</p>
             </div>
           </div>
-          <div className='player'>
-            <div className='player-photo'>
+          <div className='jogador'>
+            <div className='jogador-foto'>
               <img src={IMAGEM_ICON}/>
             </div>
-            <div className='player-name'>
+            <div className='jogador-nome'>
               <p>Jonas Costa</p>
             </div>
           </div>
-          <div className='player'>
-            <div className='player-photo'>
+          <div className='jogador'>
+            <div className='jogador-foto'>
               <img src={IMAGEM_ICON}/>
             </div>
-            <div className='player-name'>
+            <div className='jogador-nome'>
               <p>Bochecha</p>
             </div>
           </div>
-          <div className='player'>
-            <div className='player-photo'>
+          <div className='jogador'>
+            <div className='jogador-foto'>
               <img src={IMAGEM_ICON}/>
             </div>
-            <div className='player-name'>
+            <div className='jogador-nome'>
               <p>Claudinho</p>
             </div>
           </div>
-          <div className='player'>
-            <div className='player-photo'>
+          <div className='jogador'>
+            <div className='jogador-foto'>
               <img src={IMAGEM_ICON}/>
             </div>
-            <div className='player-name'>
+            <div className='jogador-nome'>
               <p>Formosandrinho</p>
             </div>
           </div>
-          <div className='player'>
-            <div className='player-photo'>
+          <div className='jogador'>
+            <div className='jogador-foto'>
               <img src={IMAGEM_ICON}/>
             </div>
-            <div className='player-name'>
+            <div className='jogador-nome'>
               <p>Michel Teló</p>
             </div>
           </div>
