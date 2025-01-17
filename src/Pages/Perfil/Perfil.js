@@ -11,49 +11,68 @@ const Perfil = () => {
     <Fragment>
         <div className='PagePerfil'>
             <div className='Perfil'>
-                <div>
+                <div className='Perfil_Principal'>
                     <img src={IMAGEM_PERFIL}/>
-                    <IoIcons.IoGameControllerOutline/>
-                    <TbIcons.TbCrown/>
-                    <VscIcons.VscPercentage/>
+                    <div className='Infor_Percetual'>
+                        <div>
+                            <IoIcons.IoGameControllerOutline color='#F2293D'/>
+                            <p>202</p>
+                        </div>
+                        <div>
+                            <TbIcons.TbCrown color='#F2293D'/>
+                            <p>31</p>
+                        </div>
+                        <div>
+                            <VscIcons.VscPercentage color='#F2293D'/>
+                            <p>15,35</p>
+                        </div>
+                    </div>
                 </div>
                 <div className='PerfilDados'>
                     <div className='Dados-1'>
-                        <label
-                        htmlFor="nomeUsuario"
-                        >
-                    Nome
-                        </label>
-                        <input type='text'>
-                        </input>
+                        <div className='Perfil_Form'>
+                            <label
+                            htmlFor="nomeUsuario"
+                            >
+                        Nome
+                            </label>
+                            <input type='text'>
+                            </input>
+                        </div>
                     </div>
                     <div className='Dados-2'>
-                        <label
-                        htmlFor="nomeUsuario"
-                        >
-                    Email
-                        </label>
-                        <input type='text'>
-                        </input>
+                        <div className='Perfil_Form'>
+                            <label
+                            htmlFor="nomeUsuario"
+                            >
+                        Email
+                            </label>
+                            <input type='text'>
+                            </input>
+                        </div>
                     </div>
                     <div className='Dados-3'>
-                        <label
-                        htmlFor="nomeUsuario"
-                        >
-                    Senha
-                        </label>
-                        <input type='text'>
-                        </input>
+                        <div className='Perfil_Form'>
+                            <label
+                            htmlFor="nomeUsuario"
+                            >
+                        Senha
+                            </label>
+                            <input type='text' className='senha'>
+                            </input>
+                        </div>
                     </div>
                     <div className='Dados-4'>
-                        <label
-                        htmlFor="nomeUsuario"
-                        >
-                    Data de Nascimento
-                        </label>
-                        <input type='date'>
-                        </input>
-                    </div>
+                        <div className='Perfil_Form'>
+                            <label
+                            htmlFor="nomeUsuario"
+                            >
+                        Data de Nascimento
+                            </label>
+                            <input type='date' className='DatadeNascimento'>
+                            </input>
+                        </div>
+                        </div>
                     <div className='Dados-button-1'>
                         <Link>
                             Alterar Senha
