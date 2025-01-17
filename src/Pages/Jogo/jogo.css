@@ -52,7 +52,7 @@ body {
 }
 
 .sair img {
-    width: auto;
+    width: 60%;
 }
 
 .vida {
@@ -138,7 +138,7 @@ body {
 }
 
 .letra p,
-.texto p {
+.alternativa-container .texto p {
     margin-bottom: 0;
     line-height: normal !important;
 }

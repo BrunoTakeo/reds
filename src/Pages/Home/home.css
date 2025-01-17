@@ -21,6 +21,7 @@ body {
 
 .home-container {
     width: 85%;
+    max-width: 1000px;
     padding-top: 150px;
     z-index: 1;
     display: flex;

@@ -28,6 +28,7 @@ img{
 }
 .header-container {
     width: 88%;
+    max-width: 1220px;
     display: flex;
     align-items: center;
     justify-content: space-between;
