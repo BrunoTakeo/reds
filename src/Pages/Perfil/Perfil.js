@@ -29,29 +29,25 @@ const Perfil = () => {
                     </div>
                 </div>
                 <div className='PerfilDados'>
-                    <div className='Dados-1'>
-                        <div className='Perfil_Form'>
-                            <label
-                            htmlFor="nomeUsuario"
-                            >
-                        Nome
-                            </label>
-                            <input type='text'>
-                            </input>
-                        </div>
+                    <div className='Perfil_Form'>
+                        <label
+                        htmlFor="nomeUsuario"
+                        >
+                    Nome
+                        </label>
+                        <input type='text'>
+                        </input>
+                    </div>
+                    <div className='Perfil_Form'>
+                        <label
+                        htmlFor="nomeUsuario"
+                        >
+                    Email
+                        </label>
+                        <input type='text'>
+                        </input>
                     </div>
                     <div className='Dados-2'>
-                        <div className='Perfil_Form'>
-                            <label
-                            htmlFor="nomeUsuario"
-                            >
-                        Email
-                            </label>
-                            <input type='text'>
-                            </input>
-                        </div>
-                    </div>
-                    <div className='Dados-3'>
                         <div className='Perfil_Form'>
                             <label
                             htmlFor="nomeUsuario"
@@ -61,8 +57,6 @@ const Perfil = () => {
                             <input type='text' className='senha'>
                             </input>
                         </div>
-                    </div>
-                    <div className='Dados-4'>
                         <div className='Perfil_Form'>
                             <label
                             htmlFor="nomeUsuario"
@@ -72,13 +66,11 @@ const Perfil = () => {
                             <input type='date' className='DatadeNascimento'>
                             </input>
                         </div>
-                        </div>
-                    <div className='Dados-button-1'>
+                    </div>
+                    <div className='Dados-button'>
                         <Link>
                             Alterar Senha
                         </Link>
-                    </div>
-                    <div className='Dados-button-2'>
                         <Link>
                             Salvar
                         </Link>
