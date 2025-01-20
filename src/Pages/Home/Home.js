@@ -1,7 +1,8 @@
 import React, { Fragment } from 'react'
 import { Link } from 'react-router-dom'
 import './home.css'
-import { IMAGEM_TOPICO, IMAGEM_TUTORIAL_JOGO, IMAGEM_VER } from '../../Configs/config'
+import * as BsIcons from 'react-icons/bs'
+import { IMAGEM_TUTORIAL_JOGO } from '../../Configs/config'
 
 const Home = () => {
   return (
@@ -14,7 +15,7 @@ const Home = () => {
           </div>
           <div className='veja-mais'>
             <p>Veja mais</p>
-            <img src={IMAGEM_VER}/>
+            <BsIcons.BsArrowDown/>
           </div>
           <div className='como-jogar'>
             <div className='logo-tutorial'>
@@ -25,7 +26,7 @@ const Home = () => {
               <div className='topico-container'>
                   <div className='topico'>
                       <div className='topico-icon'>
-                          <img src={IMAGEM_TOPICO}/>
+                          <BsIcons.BsCheckCircleFill/>
                       </div>
                       <div className='texto'>
                           <p>O jogo se trata de um quiz competitivo para testar os conhecimentos de seus participantes sobre a área de TI.</p>
@@ -33,7 +34,7 @@ const Home = () => {
                   </div>
                   <div className='topico'>
                       <div className='topico-icon'>
-                        <img src={IMAGEM_TOPICO}/>
+                        <BsIcons.BsCheckCircleFill/>
                       </div>
                       <div className='texto'>
                           <p>Encontre salas disponíveis ou crie a sua própria para conseguir o código de acesso.</p>
@@ -41,7 +42,7 @@ const Home = () => {
                   </div>
                   <div className='topico'>
                       <div className='topico-icon'>
-                        <img src={IMAGEM_TOPICO}/>
+                        <BsIcons.BsCheckCircleFill/>
                       </div>
                       <div className='texto'>
                           <p>Uma vez na sala, coloque em prática todo seu saber para sobreviver a cada resposta correta.</p>
@@ -49,7 +50,7 @@ const Home = () => {
                   </div>
                   <div className='topico'>
                       <div className='topico-icon'>
-                        <img src={IMAGEM_TOPICO}/>
+                        <BsIcons.BsCheckCircleFill/>
                       </div>
                       <div className='texto'>
                           <p>Se errar, seus pontos de vida decaem correspondente ao seu tempo de resposta em relação aos demais jogadores.</p>
@@ -57,7 +58,7 @@ const Home = () => {
                   </div>
                   <div className='topico'>
                       <div className='topico-icon'>
-                        <img src={IMAGEM_TOPICO}/>
+                        <BsIcons.BsCheckCircleFill/>
                       </div>
                       <div className='texto'>
                           <p>Sem um limite de perguntas, o jogo só acaba quando restar apenas um jogador sem seus pontos zerados.</p>

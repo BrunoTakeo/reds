@@ -8,9 +8,6 @@
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
     font-family: "Montserrat", sans-serif;
 }
 
@@ -51,8 +48,9 @@ body {
     letter-spacing: 1.5px;
 }
 
-.sair img {
-    width: 60%;
+.sair svg {
+    font-size: 28px;
+    color: var(--branco);
 }
 
 .vida {
@@ -78,7 +76,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(../../assets/img/BACKGROUND.svg);
+    background-image: url(../../assets/img/background.svg);
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: center;

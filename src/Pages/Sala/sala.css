@@ -5,12 +5,6 @@
     --branco: #F2F2F2;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
     background-color: var(--branco) !important;
     scroll-behavior: smooth;
@@ -53,9 +47,12 @@ body {
 }
 
 .criar-sala-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border: 3px solid var(--branco);
     border-radius: 10px;
-    padding: 7px 10px;
+    padding: 10px;
     transition: all 0.3s;
     cursor: pointer;
 }

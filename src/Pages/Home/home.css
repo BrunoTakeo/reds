@@ -8,12 +8,6 @@
     --branco: #F2F2F2;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
     background-color: var(--branco);
     scroll-behavior: smooth;
@@ -49,7 +43,7 @@ body {
     color: var(--branco);
     font-size: 36px;
     border-radius: 10px;
-    background-image: url("../../assets/img/WELCOME_BANNER.png");
+    background-image: url("../../assets/img/welcome_banner.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -67,7 +61,11 @@ body {
     justify-content: center;
     align-items: center;
     font-weight: 500;
-    margin: 40px 0 40px 0;
+    margin: 40px 0;
+}
+
+.veja-mais svg {
+    font-size: 28px;
 }
 
 .como-jogar {
@@ -135,8 +133,9 @@ body {
     align-items: center;
 }
 
-.topico-icon img {
-    width: 30px;
+.topico-icon svg {
+    font-size: 28px;
+    color: var(--vermelho-claro);
 }
 
 .cti {

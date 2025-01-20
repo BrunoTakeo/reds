@@ -1,5 +1,6 @@
 import React from 'react'
 import './jogo.css'
+import * as BsIcons from 'react-icons/bs'
 import { IMAGEM_BACK } from '../../Configs/config'
 
 const Jogo = () => {
@@ -10,7 +11,7 @@ const Jogo = () => {
                 <div className='pergunta-conteudo'>
                     <div className='jogo-pergunta-topo'>
                         <div className='sair'>
-                            <img src={IMAGEM_BACK}/>
+                            <BsIcons.BsArrowLeft/>
                         </div>
                         <div className='vida'>
                             <p>4350</p>
