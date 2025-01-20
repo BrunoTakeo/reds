@@ -13,6 +13,7 @@
 
 body {
     background-color: var(--branco) !important;
+    scroll-behavior: smooth;
 }
 
 .sala-container {
@@ -38,6 +39,7 @@ body {
 .criar-sala {
     width: 100%;
     min-height: 250px;
+    padding: 25px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -50,15 +52,20 @@ body {
     font-size: 1.5em;
 }
 
-.criar-sala img {
+.criar-sala-logo {
     border: 3px solid var(--branco);
     border-radius: 10px;
-    padding: 10px;
-    transition: all 0.2s;
+    padding: 7px 10px;
+    transition: all 0.3s;
+    cursor: pointer;
 }
 
-.criar-sala img:hover {
+.criar-sala-logo:hover {
     background-color: var(--branco);
+}
+
+.criar-sala-logo:hover svg {
+    color: var(--vermelho-claro);
 }
 
 .sala-carrossel {
@@ -67,6 +74,8 @@ body {
     display: flex;
     flex-direction: column;
     gap: 50px;
+    overflow: hidden;
+    position: relative;
 }
 
 .carrossel-titulo {
@@ -78,22 +87,29 @@ body {
 }
 
 .carrossel-salas {
-    width: 100%;
-    max-width: 1500px !important;
     display: flex;
     align-items: flex-start;
+    width: fit-content;
     gap: 30px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.carrossel-salas::-webkit-scrollbar {
+    display: none;
 }
 
 .carrossel-sala {
-    width: 35%;
+    flex: 0 0 315px;
+    height: 200px;
     display: flex;
     flex-direction: column;
     border-radius: 10px;
     border: 1px solid var(--preto);
     background-color: var(--branco);
-    overflow: hidden;
-    transition: all 0.2s;
 }
 
 .carrossel-sala:hover {
@@ -109,7 +125,7 @@ body {
 }
 
 .sala-titulo {
-    height: 75px;
+    max-height: 75px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -119,7 +135,7 @@ body {
     background-color: var(--preto);
     border-radius: 8px 8px 0px 0px;
     color: var(--branco);
-    transition: all 0.2s;
+    transition: all 0.25s;
 }
 
 .adicionar-sala {
@@ -132,15 +148,16 @@ body {
     border-radius: 50% !important;
     background-color: var(--vermelho-escuro);
     cursor: pointer;
+    transition: opacity 0.3s;
 }
 
 .carrossel-sala:hover .adicionar-sala {
     display: flex;
 }
 
-/* .carrossel-sala:hover .sala-titulo img {
-
-} */
+.adicionar-sala:hover, .carrossel-prox:hover {
+    opacity:.9;
+}
 
 .sala-conteudo {
     display: flex;
@@ -167,10 +184,9 @@ body {
 }
 
 .carrossel-slider {
-    width: 12.5%;
     display: flex;
-    justify-content: space-between;
     margin-bottom: 120px;
+    gap: 25px;
 }
 
 .carrossel-ant {
