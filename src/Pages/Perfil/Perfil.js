@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react'
+import React from 'react'
 import { IMAGEM_PERFIL } from '../../Configs/config'
 import * as IoIcons from 'react-icons/io5'
 import * as TbIcons from 'react-icons/tb'
@@ -7,78 +7,63 @@ import { Link } from 'react-router-dom'
 import './perfil.css'
 
 const Perfil = () => {
+
   return (
-    <Fragment>
-        <div className='PagePerfil'>
-            <div className='Perfil'>
-                <div className='Perfil_Principal'>
+    <>
+        <div className='perfil-container'>
+            <div className='perfil-formulario'>
+                <div className='perfil-topo'>
                     <img src={IMAGEM_PERFIL}/>
-                    <div className='Infor_Percetual'>
-                        <div>
+                    <div className='estatistica'>
+                        <div className='estatistica-item'>
                             <IoIcons.IoGameControllerOutline color='#F2293D'/>
                             <p>202</p>
                         </div>
-                        <div>
+                        <div className='estatistica-item'>
                             <TbIcons.TbCrown color='#F2293D'/>
                             <p>31</p>
                         </div>
-                        <div>
+                        <div className='estatistica-item'>
                             <VscIcons.VscPercentage color='#F2293D'/>
                             <p>15,35</p>
                         </div>
                     </div>
                 </div>
-                <div className='PerfilDados'>
-                    <div className='Perfil_Form'>
-                        <label
-                        htmlFor="nomeUsuario"
-                        >
-                    Nome
+                <div className='perfil-dados'>
+                    <div className='perfil-item'>
+                        <label htmlFor="nomeUsuario">
+                            Nome
                         </label>
-                        <input type='text'>
-                        </input>
+                        <input type='text' placeholder='Clara Soares'/>
                     </div>
-                    <div className='Perfil_Form'>
-                        <label
-                        htmlFor="nomeUsuario"
-                        >
-                    Email
+                    <div className='perfil-item'>
+                        <label htmlFor="email">
+                            Email
                         </label>
-                        <input type='text'>
-                        </input>
+                        <input type='text' placeholder='clarasoares@mail.com.br'/>
                     </div>
-                    <div className='Dados-2'>
-                        <div className='Perfil_Form'>
-                            <label
-                            htmlFor="nomeUsuario"
-                            >
-                        Senha
+                    <div className='formulario-grupo'>
+                        <div className='perfil-item'>
+                            <label htmlFor="senha">
+                                Senha
                             </label>
-                            <input type='text' className='senha'>
-                            </input>
+                            <input type='password' placeholder='***********'/>
                         </div>
-                        <div className='Perfil_Form'>
-                            <label
-                            htmlFor="nomeUsuario"
-                            >
-                        Data de Nascimento
+                        <div className='perfil-item'>
+                            <label htmlFor="dataNasc">
+                                Data de Nascimento
                             </label>
-                            <input type='date' className='DatadeNascimento'>
-                            </input>
+                            <input type='date'/>
                         </div>
                     </div>
-                    <div className='Dados-button'>
-                        <Link>
-                            Alterar Senha
-                        </Link>
-                        <Link>
-                            Salvar
-                        </Link>
+                    <div className='formulario-botao'>
+                        {/* <Link className='alterar-senha-botao'> Alterar Senha </Link> */}
+                        <Link className='salvar-botao'> Salvar </Link>
                     </div>
                 </div>
             </div>
         </div>
-    </Fragment>
+    </>
   )
 }
 
