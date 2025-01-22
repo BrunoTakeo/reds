@@ -176,3 +176,9 @@ input[type="password"] {
         flex-direction: column;
     }
 }
+
+@media screen and (max-width: 400px){
+    .estatistica {
+        gap: 25%;
+    }
+}

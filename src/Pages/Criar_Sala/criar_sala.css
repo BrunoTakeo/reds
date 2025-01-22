@@ -1,0 +1,167 @@
+:root {
+    --vermelho-escuro: #BE1E2D;
+    --vermelho-claro: #F2293D;
+    --preto: #1C1C1C;
+    --branco: #F2F2F2;
+}
+
+.criar-sala-formulario {
+    width: 75%;
+    max-width: 1000px;
+    padding: 150px 0;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    gap: 35px;
+}
+
+.criar-sala-formulario p {
+    margin-bottom: 0;
+}
+
+::selection {
+    background-color: var(--vermelho-escuro);
+    color: var(--branco);
+}
+
+.tempo-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    padding: 25px 0;
+    box-shadow: 0px 0px 10px 5px rgba(28,28,28,0.1);
+}
+
+.tempo-container svg {
+    font-size: 28px;
+}
+
+.tempo-container p {
+    font-size: 0.8em;
+    font-weight: 200;
+    letter-spacing: 1px;
+}
+
+.tempo select {
+    padding: 5px;
+}
+
+.jogadores-tipo-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 45px;
+    box-shadow: 0px 0px 10px 5px rgba(28,28,28,0.1);
+}
+
+.numero-jogadores, .tipo-perguntas {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    font-size: 0.9em;
+    gap: 20px;
+}
+
+.numero-jogadores p, .tipo-perguntas p, .disciplina-titulo {
+    font-weight: 600;
+}
+
+.numero-jogadores select, .tipo-perguntas select {
+    width: 100%;
+    border-radius: 10px;
+    height: 50px;
+    padding: 0 15px;
+}
+
+.disciplina-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 35px 25px;
+    gap: 30px;
+    box-shadow: 0px 0px 10px 5px rgba(28,28,28,0.1);
+}
+
+.disciplina-itens {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.disciplina-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8em;
+    border-radius: 10px;
+    border: 2px solid #1c1c1c44;
+    padding: 10px 35px;
+    transition: 0.35s;
+    cursor: pointer;
+}
+
+.disciplina-item:hover {
+    transition: 0.15s;
+    border-color: var(--vermelho-claro);
+}
+
+.disciplina-item.checked {
+    color: var(--branco);
+    background-color: var(--vermelho-claro);
+    border-color: var(--vermelho-claro);
+}
+
+.disciplina-item input[type="checkbox"] {
+    display: none;
+}
+
+.botao-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 35px;
+    margin-top: 5px;
+}
+
+.botao-salvar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-weight: 600;
+    height: 50px;
+    letter-spacing: 0.5px;
+    border-radius: 10px;
+    transition: 0.35s;
+    border: 2px solid var(--vermelho-claro);
+    background: var(--vermelho-claro);
+    color: var(--branco);
+}
+
+.botao-salvar:hover {
+    transition: 0.15s;
+    background-color: var(--branco);
+    color: var(--vermelho-claro);
+}
+
+@media screen and (max-width: 540px) {
+    .jogadores-tipo-container {
+        flex-direction: column;
+    }
+}

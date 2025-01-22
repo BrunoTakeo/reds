@@ -57,6 +57,10 @@ body {
     cursor: pointer;
 }
 
+.criar-sala-logo svg {
+    color: var(--branco);
+}
+
 .criar-sala-logo:hover {
     background-color: var(--branco);
 }
