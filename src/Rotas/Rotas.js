@@ -5,6 +5,8 @@ import Index from '../Pages/Index/Index'
 import Entrar from '../Pages/Entrar/Entrar'
 import Sala_Espera from '../Pages/Sala_Espera/Sala_Espera'
 import Jogo from '../Pages/Jogo/Jogo'
+import Ranking from '../Pages/Ranking/Ranking'
+import Vencedor from '../Pages/Vencedor/Vencedor'
 import Cadastro from '../Pages/Cadastro/Cadastro'
 import Login from '../Pages/Login/Login'
 import Home from '../Pages/Home/Home'
@@ -21,6 +23,8 @@ const Rotas = () => {
             <Route path='/entrar' element={<Entrar/>}/>
             <Route path='/sala_espera' element={<Sala_Espera/>}/>
             <Route path='/jogo' element={<Jogo/>}/>
+            <Route path='/ranking' element={<Ranking/>}/>
+            <Route path='/vencedor' element={<Vencedor/>}/>
             <Route path='/cadastro' element={<Cadastro/>}/>
             <Route path='/login' element={<Login/>}/>
             <Route element={<PrivateRoute/>}>

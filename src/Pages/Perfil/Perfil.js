@@ -13,7 +13,13 @@ const Perfil = () => {
         <div className='perfil-container'>
             <div className='perfil-formulario'>
                 <div className='perfil-topo'>
-                    <img src={IMAGEM_PERFIL}/>
+                    <input type='file' id='upload'/>
+                    <label htmlFor='upload' className='perfil-foto'>
+                        <img src={IMAGEM_PERFIL}/>
+                        <div className='perfil-foto-icon'>
+                            <IoIcons.IoCamera/>
+                        </div>
+                    </label>
                     <div className='estatistica'>
                         <div className='estatistica-item'>
                             <IoIcons.IoGameControllerOutline color='#F2293D'/>
