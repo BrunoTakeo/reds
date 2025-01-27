@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
 import { anterior, proximo } from './Slider';
-import { IMAGEM_SETA_ESQ, IMAGEM_SETA_DIR, IMAGEM_MAIS } from '../../Configs/config'
+import { IMAGEM_SETA_ESQ, IMAGEM_SETA_DIR, IMAGEM_MAIS, IMAGEM_LOGO_W } from '../../Configs/config'
 import { Link } from 'react-router-dom';
 import './sala.css'
 
@@ -27,7 +27,7 @@ const Sala = () => {
                 {/* 1 */}
                 <div className='carrossel-sala'>
                   <div className='sala-titulo'>
-                    <p>Estudos de POO</p>
+                    <img className='sala-logo' src={IMAGEM_LOGO_W}/>
                     <img className='adicionar-sala' src={IMAGEM_MAIS}/>
                   </div>
                   <div className='sala-conteudo'>
@@ -48,7 +48,7 @@ const Sala = () => {
                 {/* 2 */}
                 <div className='carrossel-sala'>
                   <div className='sala-titulo'>
-                    <p>Sala do Renatão</p>
+                    <img className='sala-logo' src={IMAGEM_LOGO_W}/>
                     <img className='adicionar-sala' src={IMAGEM_MAIS}/>
                   </div>
                   <div className='sala-conteudo'>
@@ -69,7 +69,7 @@ const Sala = () => {
                 {/* 3 */}
                 <div className='carrossel-sala'>
                   <div className='sala-titulo'>
-                    <p>Estudos de POO</p>
+                    <img className='sala-logo' src={IMAGEM_LOGO_W}/>
                     <img className='adicionar-sala' src={IMAGEM_MAIS}/>
                   </div>
                   <div className='sala-conteudo'>
@@ -90,7 +90,7 @@ const Sala = () => {
                 {/* 4 */}
                 <div className='carrossel-sala'>
                   <div className='sala-titulo'>
-                    <p>Estudos de POO</p>
+                    <img className='sala-logo' src={IMAGEM_LOGO_W}/>
                     <img className='adicionar-sala' src={IMAGEM_MAIS}/>
                   </div>
                   <div className='sala-conteudo'>

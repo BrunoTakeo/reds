@@ -11,7 +11,7 @@ const Perfil = () => {
   return (
     <>
         <div className='perfil-container'>
-            <div className='perfil-formulario'>
+            <form className='perfil-formulario' method='POST' onSubmit=''>
                 <div className='perfil-topo'>
                     <input type='file' id='upload'/>
                     <label htmlFor='upload' className='perfil-foto'>
@@ -40,34 +40,58 @@ const Perfil = () => {
                         <label htmlFor="nomeUsuario">
                             Nome
                         </label>
-                        <input type='text' placeholder='Clara Soares'/>
+                        <input
+                            type='text'
+                            id='nomeUsuario' 
+                            name='nomeUsuario'
+                            placeholder='Clara Soares'
+                        />
                     </div>
                     <div className='perfil-item'>
                         <label htmlFor="email">
                             Email
                         </label>
-                        <input type='text' placeholder='clarasoares@mail.com.br'/>
+                        <input
+                            type='email'
+                            id='email'
+                            name='email'
+                            placeholder='clarasoares@mail.com.br'
+                        />
                     </div>
                     <div className='formulario-grupo'>
                         <div className='perfil-item'>
                             <label htmlFor="senha">
                                 Senha
                             </label>
-                            <input type='password' placeholder='***********'/>
+                            <input
+                                type='password'
+                                id='senha'
+                                name='senha'
+                                placeholder='***********'
+                            />
                         </div>
                         <div className='perfil-item'>
                             <label htmlFor="dataNasc">
                                 Data de Nascimento
                             </label>
-                            <input type='date'/>
+                            <input
+                                type='date'
+                                id='dataNasc'
+                                name='dataNasc'
+                                placeholder='12/12/2002'
+                            />
                         </div>
                     </div>
                     <div className='formulario-botao'>
-                        {/* <Link className='alterar-senha-botao'> Alterar Senha </Link> */}
-                        <Link className='salvar-botao'> Salvar </Link>
+                        <Link className='alterar-senha-botao'> 
+                            Excluir 
+                        </Link>
+                        <button className='excluir-botao' type='submit'> 
+                            Salvar
+                        </button>
                     </div>
                 </div>
-            </div>
+            </form>
         </div>
     </>
   )

@@ -164,7 +164,7 @@ input[type="password"] {
     margin-top: 15px;
 }
 
-.salvar-botao, .alterar-senha-botao {
+.excluir-botao, .alterar-senha-botao {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -178,13 +178,13 @@ input[type="password"] {
     transition: 0.35s;
 }
 
-.salvar-botao {
+.excluir-botao {
     border: 2px solid var(--vermelho-claro);
     background: var(--vermelho-claro);
     color: var(--branco);
 }
 
-.salvar-botao:hover {
+.excluir-botao:hover {
     transition: 0.15s;
     background-color: var(--branco);
     color: var(--vermelho-claro);
@@ -193,6 +193,13 @@ input[type="password"] {
 .alterar-senha-botao {
     border: 2px solid var(--preto);
     color: var(--preto);
+    transition: 0.35s;
+}
+
+.alterar-senha-botao:hover {
+    transition: 0.15s;
+    border: 2px solid var(--vermelho-claro);
+    color: var(--vermelho-claro);   
 }
 
 @media screen and (max-width: 1050px){

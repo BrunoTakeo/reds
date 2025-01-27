@@ -121,8 +121,12 @@ body {
     background-color: var(--vermelho-claro);
 }
 
-.carrossel-sala:hover .sala-titulo p {
+.carrossel-sala:hover .sala-titulo .sala-logo {
     display: none;
+}
+
+.sala-logo {
+    width: 35px !important;
 }
 
 .sala-titulo {

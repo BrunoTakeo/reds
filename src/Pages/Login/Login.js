@@ -1,11 +1,11 @@
-import React, { Fragment } from 'react'
+import React from 'react'
 import { IMAGEM_LOGO_B } from '../../Configs/config'
 import { Link } from 'react-router-dom'
 import './login.css';
 
 const Login = () => {
   return (
-    <Fragment>
+    <>
         <div className='login_container'>
             <div className='banner-login'>
                 <h1>Bem-Vindo<br/>de volta!</h1>
@@ -15,36 +15,44 @@ const Login = () => {
                     <h3>Login</h3>
                     <img src={IMAGEM_LOGO_B}/>
                 </div>
-                <div className='login-formulario'>
+                <form className='login-formulario' method='POST' onSubmit=''>
                     <div className='login-item'>
-                        <label htmlFor='email'>
+                        <label htmlFor="email">
                             Email
                         </label>
-                        <input type='text'>
-                        </input>
+                        <input 
+                            required 
+                            type="email"
+                            id="email"
+                            name="email"
+                        />
                     </div>
                     <div className='login-item'>
-                        <label htmlFor='senha'>
+                        <label htmlFor="senha">
                             Senha
                         </label>
-                        <input type='password'>
-                        </input>
+                        <input
+                            required 
+                            type="password"
+                            id="senha"
+                            name="senha"
+                        />
                     </div>                        
                     <div className='login-botao-area'>
-                        <Link className='login-botao' to='/home'>
+                        <button className='login-botao' type="submit">
                             Login
-                        </Link>
+                        </button>
                         <div className='n-tem-cadastro'>
                             Novo usuario?
                             <Link className='cadastro-link' to='/cadastro'>
-                            Cadastre-se
+                                Cadastre-se
                             </Link>
                         </div>
                     </div>
-                </div>
+                </form>
             </div>
         </div>
-    </Fragment>
+    </>
   )
 }
 

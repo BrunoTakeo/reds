@@ -7,12 +7,13 @@
 
 .ranking-container {
     width: 100%;
+    max-width: 1300px;
     height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 50px;
+    margin: auto;
 }
 
 .ranking-container p {
@@ -29,12 +30,11 @@
     align-items: center;
     justify-content: center;
     row-gap: 30px;
-    column-gap: 65px;
 }
 
 .ranking-pessoa {
     width: 100%;
-    height: 110px;
+    height: 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -45,7 +45,7 @@
 
 .ranking-foto {
     position: relative;
-    width: 110px;
+    width: 100px;
     display: flex;
 }
 
@@ -62,7 +62,7 @@
 
 .ranking-colocacao {
     position: absolute;
-    right: -42px;
+    right: -40px;
     width: 100%;
     height: 100%;
     font-size: 1.5em;
@@ -113,13 +113,43 @@
 /* CÓDIGOS PARA EVENTO COM MAIS DE 5 JOGADORES */
 
 .ranking-grupo.ranking-max {
-    max-width: 1135px;
+    max-width: 95%;
     height: 390px;
     justify-content: flex-start;
 }
 
 .ranking-grupo.ranking-max .ranking-pessoa {
-    max-width: 530px;
+    width: 45%;
+}
+
+@media screen and (max-width: 1155px){
+    .ranking-dados {
+        font-size: 0.8em;
+        padding-left: 25px;
+    }
+    .ranking-pontuacao h4 {
+        font-size: 1.2em;
+    }
+}
+
+@media screen and (max-width: 825px){
+    .ranking-grupo.ranking-max {
+        width: 100%;
+        max-width: 530px;
+        height: auto;
+    }
+
+    .ranking-grupo.ranking-max .ranking-pessoa {
+        width: 100%;
+    }
+
+    .ranking-pontuacao h4 {
+        font-size: 1.6em;
+    }
+    .ranking-dados {
+        font-size: 1.1em;
+        padding-left: 0px;
+    }    
 }
 
 @media screen and (max-width: 530px){

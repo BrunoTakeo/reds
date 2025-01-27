@@ -24,6 +24,7 @@ const Ranking = () => {
         <div className='ranking-container'>
             <div className={`ranking-grupo ${maximo ? "ranking-max" : ""}`}>
 
+                {/* 1 */}
                 <div className='ranking-pessoa'>
                     <div className='ranking-foto'>
                         <img src={IMAGEM_PERFIL}/>
@@ -40,6 +41,7 @@ const Ranking = () => {
                     </div>
                 </div>
 
+                {/* 2 */}
                 <div className='ranking-pessoa'>
                     <div className='ranking-foto'>
                         <img src={IMAGEM_PERFIL}/>
@@ -56,6 +58,7 @@ const Ranking = () => {
                     </div>
                 </div>
 
+                {/* 3 */}
                 <div className='ranking-pessoa'>
                     <div className='ranking-foto'>
                         <img src={IMAGEM_PERFIL}/>
@@ -72,6 +75,24 @@ const Ranking = () => {
                     </div>
                 </div>
 
+                {/* 4 */}
+                <div className='ranking-pessoa'>
+                    <div className='ranking-foto'>
+                        <img src={IMAGEM_PERFIL}/>
+                        <div className='ranking-colocacao'>
+                            <p>4</p>
+                        </div>
+                    </div>
+                    <div className='ranking-dados'>
+                        <h6>Clara Soares</h6>
+                        <p><BsIcons.BsXCircleFill/> Errou</p>
+                    </div>
+                    <div className='ranking-pontuacao'>
+                        <h4>3450</h4>
+                    </div>
+                </div>
+
+                {/* 5 */}
                 <div className='ranking-pessoa'>
                     <div className='ranking-foto'>
                         <img src={IMAGEM_PERFIL}/>

@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
 import * as BsIcons from 'react-icons/bs'
 import './criar_sala.css'
 
@@ -24,19 +23,16 @@ const Criar_Sala = () => {
 
   return (
     <>
-      <div className='criar-sala-formulario'>
+      <form className='criar-sala-formulario' method='POST' onSubmit=''>
           <div className='tempo-container'>
             <BsIcons.BsClock/>
             <div className='tempo'>
                 <select required>
-                    <option value="15"> 15 s </option>
-                    <option value="30"> 30 s </option>
-                    <option value="45"> 45 s </option>
-                    <option value="60"> 60 s </option>
-                    <option value="75"> 75 s </option>
-                    <option value="90"> 90 s </option>
-                    <option value="105"> 105 s </option>
-                    <option value="105"> 120 s </option>
+                {[15, 30, 45, 60, 75, 90, 105, 120].map((tempo) => (
+                    <option key={tempo} value={tempo}>
+                        {tempo} s
+                    </option>
+                ))}
                 </select>
             </div>
             <p>MAX → 02:00</p>
@@ -45,19 +41,22 @@ const Criar_Sala = () => {
             <div className='numero-jogadores'>
                 <p>N° DE JOGADORES</p>
                 <select required>
-                    <option value="2"> 2 jogadores </option>
-                    <option value="3"> 3 jogadores </option>
-                    <option value="4"> 4 jogadores </option>
-                    <option value="5"> 5 jogadores </option>
-                    <option value="6"> 6 jogadores </option>
+                    {[2, 3, 4, 5, 6].map((numJogadores) => (
+                        <option key={numJogadores} value={numJogadores}>
+                            {numJogadores} jogadores
+                        </option>
+                    ))}
                 </select>
             </div>
             <div className='tipo-perguntas'>
                 <p>TIPO</p>
                 <select required>
-                    <option value="Multipla Escolha"> Múltipla Escolha </option>
-                    <option value="Verdadeiro e Falso"> Verdadeiro e Falso </option>
-                    <option value="Ambos"> Ambos </option>
+                    {['Múltipla Escolha', 'Verdadeiro e Falso', 'Ambos'].map(
+                        (tipo) => (
+                        <option key={tipo} value={tipo}>
+                            {tipo}
+                        </option>
+                    ))}
                 </select>
             </div>
           </div>
@@ -151,9 +150,11 @@ const Criar_Sala = () => {
             </div>
           </div>
           <div className='botao-container'>
-            <Link className='botao-salvar'> Criar Sala </Link>
+            <button className='botao-salvar' type='submit'> 
+                Criar Sala 
+            </button>
           </div>
-      </div>
+      </form>
     </>
   )
 }

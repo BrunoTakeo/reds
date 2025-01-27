@@ -13,11 +13,11 @@ const Home = () => {
               <p>Bem-vindo ao <br></br>REDS</p>
             </div>
           </div>
-          <div className='veja-mais'>
+          <a className='veja-mais' href='#como_jogar'>
             <p>Veja mais</p>
             <BsIcons.BsArrowDown/>
-          </div>
-          <div className='como-jogar'>
+          </a>
+          <div id='como_jogar' className='como-jogar'>
             <div className='logo-tutorial'>
               <img src={IMAGEM_TUTORIAL_JOGO}/>
               <h1>COMO JOGAR?</h1>
