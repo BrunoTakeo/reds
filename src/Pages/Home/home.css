@@ -125,6 +125,7 @@ body {
 }
 
 .texto p {
+    margin-top: 1rem;
     text-align: left;
     line-height: 30px;
 }

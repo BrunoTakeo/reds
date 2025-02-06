@@ -49,12 +49,11 @@ const Criar_Sala = () => {
                 </select>
             </div>
             <div className='tipo-perguntas'>
-                <p>TIPO</p>
+                <p>N° DE PERGUNTAS</p>
                 <select required>
-                    {['Múltipla Escolha', 'Verdadeiro e Falso', 'Ambos'].map(
-                        (tipo) => (
-                        <option key={tipo} value={tipo}>
-                            {tipo}
+                    {[5, 10, 15, 20, 25, 30].map((numJogadores) => (
+                        <option key={numJogadores} value={numJogadores}>
+                            {numJogadores} perguntas
                         </option>
                     ))}
                 </select>

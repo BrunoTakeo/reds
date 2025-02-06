@@ -1,6 +1,7 @@
 import React, { useRef } from 'react';
 import { anterior, proximo } from './Slider';
 import { IMAGEM_SETA_ESQ, IMAGEM_SETA_DIR, IMAGEM_MAIS, IMAGEM_LOGO_W } from '../../Configs/config'
+import * as BsIcons from 'react-icons/bs'
 import { Link } from 'react-router-dom';
 import './sala.css'
 
@@ -35,8 +36,8 @@ const Sala = () => {
                         <div className='sala-categoria'>
                           <p>Lógica, Estrutura de Dados</p>
                         </div>
-                        <div className='sala-tipo-pergunta'>
-                          <p>Verdadeiro e Falso</p>
+                        <div className='sala-numero-perguntas'>
+                          <p>20 perguntas</p>
                         </div>
                       </div>
                       <div className='sala-jogadores'>
@@ -56,8 +57,8 @@ const Sala = () => {
                         <div className='sala-categoria'>
                           <p>Sistemas Operacionais</p>
                         </div>
-                        <div className='sala-tipo-pergunta'>
-                          <p>Ambos</p>
+                        <div className='sala-numero-perguntas'>
+                          <p>15 perguntas</p>
                         </div>
                       </div>
                       <div className='sala-jogadores'>
@@ -77,8 +78,8 @@ const Sala = () => {
                         <div className='sala-categoria'>
                           <p>Lógica, Estrutura de Dados</p>
                         </div>
-                        <div className='sala-tipo-pergunta'>
-                          <p>Verdadeiro e Falso</p>
+                        <div className='sala-numero-perguntas'>
+                          <p>10 perguntas</p>
                         </div>
                       </div>
                       <div className='sala-jogadores'>
@@ -98,8 +99,8 @@ const Sala = () => {
                         <div className='sala-categoria'>
                           <p>Lógica, Estrutura de Dados</p>
                         </div>
-                        <div className='sala-tipo-pergunta'>
-                          <p>Verdadeiro e Falso</p>
+                        <div className='sala-numero-perguntas'>
+                          <p>25 perguntas</p>
                         </div>
                       </div>
                       <div className='sala-jogadores'>

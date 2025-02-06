@@ -144,10 +144,6 @@
     padding: 10px;
 }
 
-input[type="password"] {
-    font-size: 22px;
-}
-
 .formulario-grupo {
     width: 100%;
     display: flex;

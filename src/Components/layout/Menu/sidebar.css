@@ -25,6 +25,10 @@
 	font-family: "Short Stack", sans-serif;
 }
 
+.app-sidebar a {
+	text-decoration: none;
+}
+
 .app-sidebar.active {
 	margin-left: -220px;
 }
