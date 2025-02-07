@@ -1,0 +1,215 @@
+:root {
+    --vermelho-escuro: #BE1E2D;
+    --vermelho-claro: #F2293D;
+    --preto: #1C1C1C;
+    --branco: #F2F2F2;
+}
+
+body {
+    background-color: var(--branco) !important;
+    scroll-behavior: smooth;
+}
+
+.sala-container {
+    width: 85%;
+    max-width: 1000px;
+    padding-top: 150px;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+}
+
+.sala-container img {
+    width: auto;
+    border-radius: 0;
+}
+
+.sala-container p {
+    margin-bottom: 0;
+}
+
+.criar-sala {
+    width: 100%;
+    min-height: 250px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--vermelho-claro);
+    color: var(--branco);
+    gap: 35px;
+    border-radius: 20px;
+    font-weight: 500;
+    font-size: 1.5em;
+}
+
+.criar-sala-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid var(--branco);
+    border-radius: 10px;
+    padding: 10px;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.criar-sala-logo svg {
+    color: var(--branco);
+}
+
+.criar-sala-logo:hover {
+    background-color: var(--branco);
+}
+
+.criar-sala-logo:hover svg {
+    color: var(--vermelho-claro);
+}
+
+.sala-carrossel {
+    width: 100%;
+    margin-top: 120px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    overflow: hidden;
+    position: relative;
+}
+
+.carrossel-titulo {
+    padding-bottom: 10px;
+    border-bottom: 4px solid var(--vermelho-claro);
+    text-align: left;
+    font-weight: 500;
+    font-size: 1.25em;
+}
+
+.carrossel-salas {
+    display: flex;
+    align-items: flex-start;
+    width: fit-content;
+    gap: 30px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.carrossel-salas::-webkit-scrollbar {
+    display: none;
+}
+
+.carrossel-sala {
+    flex: 0 0 315px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    border: 1px solid var(--preto);
+    background-color: var(--branco);
+}
+
+.carrossel-sala:hover {
+    border: 1px solid var(--vermelho-escuro);
+}
+
+.carrossel-sala:hover .sala-titulo {
+    background-color: var(--vermelho-claro);
+}
+
+.carrossel-sala:hover .sala-titulo .sala-logo {
+    display: none;
+}
+
+.sala-logo {
+    width: 35px !important;
+}
+
+.sala-titulo {
+    max-height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1em;
+    font-weight: bold;
+    padding: 25px;
+    background-color: var(--preto);
+    border-radius: 8px 8px 0px 0px;
+    color: var(--branco);
+    transition: all 0.25s;
+}
+
+.adicionar-sala {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    padding: 8px;
+    border-radius: 50% !important;
+    background-color: var(--vermelho-escuro);
+    cursor: pointer;
+    transition: opacity 0.3s;
+}
+
+.carrossel-sala:hover .adicionar-sala {
+    display: flex;
+}
+
+.adicionar-sala:hover, .carrossel-prox:hover {
+    opacity:.9;
+}
+
+.sala-conteudo {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 18px 22px;
+    font-size: 0.9em;
+}
+
+.sala-infos {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 12px;
+}
+
+.sala-categoria p {
+    font-weight: bold;
+}
+
+.sala-jogadores {
+    text-align: end;
+}
+
+.carrossel-slider {
+    display: flex;
+    margin-bottom: 120px;
+    gap: 25px;
+}
+
+.carrossel-ant {
+    border: 2px solid var(--preto);
+}
+
+.carrossel-prox {
+    background-color: var(--vermelho-claro);
+    border: 2px solid var(--vermelho-claro);
+}
+
+.carrossel-ant, .carrossel-prox {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}

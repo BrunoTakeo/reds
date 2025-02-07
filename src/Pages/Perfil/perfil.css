@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Short+Stack&display=swap');
+
+:root {
+    --vermelho-escuro: #BE1E2D;
+    --vermelho-claro: #F2293D;
+    --preto: #1C1C1C;
+    --branco: #F2F2F2;
+}
+
+.perfil-container {
+    width: 85%;
+    max-width: 1000px;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    z-index: 1;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.perfil-container p {
+    margin-bottom: 0 !important;
+}
+
+.perfil-formulario {
+    width: 80%;
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--preto);
+}
+
+.perfil-topo {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 32.5%;
+}
+
+.perfil-topo input {
+    display: none;
+}
+
+.perfil-foto {
+    position: relative;
+    width: 130px;
+    height: 130px;
+}
+
+.perfil-topo img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.perfil-foto-icon {
+    position: absolute;
+    bottom: 0;
+    right: -3px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid var(--branco);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--vermelho-claro);
+    color: var(--branco);
+    cursor: pointer;
+    transition: 0.35s;
+}
+
+.perfil-foto-icon svg {
+    font-size: 20px;
+}
+
+.perfil-foto-icon:hover {
+    transition: 0.15s;
+    background-color: var(--branco);
+    color: var(--vermelho-claro);
+}
+
+.estatistica {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 45%;
+}
+
+.estatistica-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.estatistica-item p {
+    font-size: 1.3em;
+    font-family: "Short Stack", sans-serif;
+}
+
+.estatistica-item svg {
+    font-size: 32px;
+}
+
+.perfil-dados {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    gap: 30px;
+}
+
+.perfil-item {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    font-size: 0.85em;
+    gap: 8px;
+} 
+
+.perfil-item label {
+    font-weight: 500;
+}
+
+.perfil-item input {
+    width: 100%;
+    border-radius: 10px;
+    height: 40px;
+    font-weight: 300;
+    background: var(--branco);
+    border: 0.5px solid #1c1c1c44;
+    padding: 10px;
+}
+
+input[type="password"] {
+    font-size: 22px;
+}
+
+.formulario-grupo {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 35px;
+}
+
+.formulario-botao {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 35px;
+    margin-top: 15px;
+}
+
+.excluir-botao, .alterar-senha-botao {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 0.9em;
+    font-weight: 600;
+    height: 50px;
+    letter-spacing: 0.5px;
+    border-radius: 10px;
+    transition: 0.35s;
+}
+
+.excluir-botao {
+    border: 2px solid var(--vermelho-claro);
+    background: var(--vermelho-claro);
+    color: var(--branco);
+}
+
+.excluir-botao:hover {
+    transition: 0.15s;
+    background-color: var(--branco);
+    color: var(--vermelho-claro);
+}
+
+.alterar-senha-botao {
+    border: 2px solid var(--preto);
+    color: var(--preto);
+    transition: 0.35s;
+}
+
+.alterar-senha-botao:hover {
+    transition: 0.15s;
+    border: 2px solid var(--vermelho-claro);
+    color: var(--vermelho-claro);   
+}
+
+@media screen and (max-width: 1050px){
+    .perfil-topo {
+        gap: 25%;
+    }
+    .estatistica {
+        gap: 35%;
+    }
+}
+
+@media screen and (max-width: 915px){
+    .perfil-topo {
+        flex-direction: column;
+        gap: 30px;
+    }
+}
+
+@media screen and (max-width: 550px){
+    .formulario-grupo {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .estatistica {
+        gap: 25%;
+    }
+}

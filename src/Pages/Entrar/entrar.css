@@ -1,0 +1,90 @@
+:root {
+    --vermelho-escuro: #BE1E2D ;
+    --vermelho-claro: #F2293D;
+    --preto: #1C1C1C; 
+    --branco: #F2F2F2 ;
+}
+
+.entrar-container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background: var(--vermelho-escuro);
+    background-image: url(../../assets/img/MAKERS.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.entrar-logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 375px;
+    gap: 40px;
+    letter-spacing: 8px;
+}
+.entrar-logo img {
+    width: 20%;
+}
+.entrar-logo h1{
+    font-family: "Short Stack", sans-serif;
+    color: var(--branco);
+    margin-top: 15px;
+}
+.entrar-nome{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 375px;
+    height: 170px;
+    background: var(--branco);
+    border-radius: 10px;
+}
+.entrar-nome input{
+    text-align: center;
+    width: 90%;
+    height: 55px;
+    border-radius: 10px;
+    color: var(--preto);
+}
+.entrar-botao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    background: #1C1C1C;
+    color: var(--branco);
+    width: 90%;
+    height: 55px;
+    letter-spacing: 0.5px;
+    border-radius: 10px;
+}
+.link-cadastro{
+    color: var(--branco);
+    display: flex;
+    gap: 5px;
+    font-weight: 300;
+}
+.cadastro-label{
+    color: var(--branco);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+@media screen and (max-width: 460px){
+    .entrar-logo, .entrar-nome {
+        width: 85%;
+    }
+    .link-cadastro {
+        flex-direction: column;
+        gap: 0;
+        letter-spacing: 0.5px;
+    }
+}

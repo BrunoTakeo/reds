@@ -1,0 +1,36 @@
+:root {
+    --vermelho-escuro: #BE1E2D ;
+    --vermelho-claro: #F2293D;
+    --preto: #1C1C1C; 
+    --branco: #F2F2F2 ;
+}
+
+.app-sidebar {
+	z-index: 1;
+	top: 0;
+	background: var(--preto);
+	position: fixed;
+	left:0;
+	min-width: 220px;
+	max-width: 220px;
+	height: 100vh;
+	transition: 0.5s;
+	overflow: auto;
+    flex-shrink: 0;
+}
+.app-sidebar h2{
+	color: var(--branco);
+	margin-top: 2rem;
+	margin-bottom: 4rem;
+	font-family: "Short Stack", sans-serif;
+}
+
+.app-sidebar.active {
+	margin-left: -220px;
+}
+
+@media screen and (max-width: 800px){
+    .app-sidebar {
+		margin-top: 100px;
+    }
+}
