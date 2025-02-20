@@ -13,10 +13,11 @@ const Index = () => {
             REDS
           </h1>
         </div>
-        <div className='index-cod-entrar'>
+        <div className='index-cod-entrar' method='GET'>
           <input
           id=''
           type='text'
+          name='codigo'
           placeholder='Código da sala'
           />
           <Link to='/entrar'
