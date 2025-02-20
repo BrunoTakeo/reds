@@ -12,6 +12,8 @@ import Login from '../Pages/Login/Login'
 import Home from '../Pages/Home/Home'
 import Sala from '../Pages/Sala/Sala'
 import Criar_Sala from '../Pages/Criar_Sala/Criar_Sala'
+import Rank from '../Pages/Rank/Rank'
+import Amigos from '../Pages/Amigos/Amigos'
 import Perfil from '../Pages/Perfil/Perfil'
 
 
@@ -30,6 +32,8 @@ const Rotas = () => {
             <Route element={<PrivateRoute/>}>
               <Route path='/home' element={<Home/>}/>
               <Route path='/sala' element={<Sala/>}/>
+              <Route path='/rank' element={<Rank/>}/>
+              <Route path='/amigos' element={<Amigos/>}/>
               <Route path='/criar_sala' element={<Criar_Sala/>}/>
               <Route path='/perfil' element={<Perfil/>}/>
             </Route>

@@ -1,20 +1,29 @@
-import React from 'react'
+import React, {useState} from 'react'
 import './jogo.css'
 import * as BsIcons from 'react-icons/bs'
-import { IMAGEM_BACK } from '../../Configs/config'
 
 const Jogo = () => {
+    const [isModalOpen, setIsModalOpen] = useState(false);
+
+    const handleOpenModal = () => {
+      setIsModalOpen(true);
+    };
+  
+    const handleCloseModal = () => {
+      setIsModalOpen(false);
+    };
+
   return (
     <>
         <div className='jogo'>
             <div className='jogo-pergunta'>
                 <div className='pergunta-conteudo'>
                     <div className='jogo-pergunta-topo'>
-                        <div className='sair'>
+                        <div className='sair' onClick={handleOpenModal}>
                             <BsIcons.BsArrowLeft/>
                         </div>
-                        <div className='vida'>
-                            <p>4350</p>
+                        <div className='num-perguntas'>
+                            <p>12 / 25</p>
                         </div>
                     </div>
                     <div className='cronometro'>
@@ -64,6 +73,24 @@ const Jogo = () => {
                 </div>
             </div>
         </div>
+
+        {isModalOpen && (
+            <div id="modal-jogo" className="modal-jogo">
+                <div className="modal-conteudo">
+                    <div className="modal-corpo">
+                        <p>Deseja mesmo sair do jogo?</p>
+                        <div className='modal-grupo-botao'>
+                            <div className='botao-cancelar' onClick={handleCloseModal}>
+                                Cancelar
+                            </div>
+                            <div className='botao-sair'>
+                                Sair
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        )}
     </>
   )
 }

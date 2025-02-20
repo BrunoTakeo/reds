@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import * as BsIcons from 'react-icons/bs'
 import './criar_sala.css'
+import { Link } from 'react-router-dom';
 
 const Criar_Sala = () => {
     const [checkboxEstado, setcheckboxEstado] = useState({
@@ -19,7 +20,16 @@ const Criar_Sala = () => {
           [key]: !prevState[key],
         }));
     };
-      
+
+    const [isModalOpen, setIsModalOpen] = useState(false);
+    
+    const handleOpenModal = () => {
+        setIsModalOpen(true);
+    };
+    
+    const handleCloseModal = () => {
+        setIsModalOpen(false);
+    };
 
   return (
     <>
@@ -149,11 +159,25 @@ const Criar_Sala = () => {
             </div>
           </div>
           <div className='botao-container'>
-            <button className='botao-salvar' type='submit'> 
+            <button className='botao-salvar' type='submit' onClick={handleOpenModal}> 
                 Criar Sala 
             </button>
           </div>
       </form>
+
+      {isModalOpen && (
+            <div id="modal-sala" className="modal-sala">
+                <div className="modal-conteudo">
+                    <div className="modal-corpo">
+                        <p>O código da sua sala é</p>
+                        <p className='sala-codigo'>C87P12</p>
+                        <Link className='botao-ok-codigo' onClick={handleCloseModal} to={'/sala_espera'}>
+                            OK
+                        </Link>
+                    </div>
+                </div>
+            </div>
+        )}
     </>
   )
 }

@@ -1,0 +1,26 @@
+:root {
+    --vermelho-escuro: #BE1E2D;
+    --vermelho-claro: #F2293D;
+    --preto: #1C1C1C;
+    --branco: #F2F2F2;
+}
+
+.rank-container {
+    width: 85%;
+    max-width: 1000px;
+    padding-top: 300px;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+}
+
+.rank-breve p {
+    font-size: 1.2em;
+    margin-top: 15px;
+}
+
+.rank-breve svg {
+    font-size: 2.5em;
+}
