@@ -1,9 +1,10 @@
-import React from 'react'
+import React, {useState} from 'react'
 import { IMAGEM_LOGO_B } from '../../Configs/config'
 import { Link } from 'react-router-dom'
 import './login.css';
 
-const Login = () => {
+const Login = () => { 
+
   return (
     <>
         <div className='login_container'>

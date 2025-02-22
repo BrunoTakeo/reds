@@ -1,9 +1,18 @@
 import React, { useState } from 'react';
 import * as BsIcons from 'react-icons/bs'
 import './criar_sala.css'
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 const Criar_Sala = () => {
+    const navigate = useNavigate();
+    const [codigoSala, setCodigoSala] = useState('');
+    const [formData, setFormData] = useState({
+        tempo: 15,
+        numJogadores: 2,
+        numPerguntas: 5,
+        disciplinas: [],
+    });
+
     const [checkboxEstado, setcheckboxEstado] = useState({
         html: false,
         css: false,
@@ -31,9 +40,31 @@ const Criar_Sala = () => {
         setIsModalOpen(false);
     };
 
+    const handleChange = (e) => {
+        setFormData({ ...formData, [e.target.name]: e.target.value });
+    };
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+
+        const response = await fetch('http://localhost:8080/api/criarSala', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(formData),
+        });
+
+        const data = await response.json();
+        if (response.ok) {
+            setCodigoSala(data.codigo); // Código dinâmico vindo do backend
+            setIsModalOpen(true);
+        } else {
+            alert('Erro ao criar sala.');
+        }
+    };
+
   return (
     <>
-      <form className='criar-sala-formulario' method='POST' onSubmit=''>
+      <form className='criar-sala-formulario' method='POST' onSubmit={handleSubmit}>
           <div className='tempo-container'>
             <BsIcons.BsClock/>
             <div className='tempo'>
