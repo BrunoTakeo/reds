@@ -99,7 +99,7 @@ const useApi = () =>{
      return {
         errorAxios,
         getData,
-        postData,
+        posData,
         putData,
         getDataById,
         deleteDataById
