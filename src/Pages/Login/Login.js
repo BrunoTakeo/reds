@@ -1,9 +1,47 @@
 import React, {useState} from 'react'
+import {useValidarDadosLogin} from '../../rules/LoginValidacaoRules'
 import { IMAGEM_LOGO_B } from '../../Configs/config'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import './login.css';
+import useApi from '../../Service/AxiosService';
+import useAuth from '../../Hook/useAuth'; 
+import {DASHBOARD, LOGIN_SYS} from '../../Configs/UrlSistema'
+import { ERROR_LOGIN, LOGIN } from '../../Types/Login';
 
 const Login = () => { 
+
+    const navigate = useNavigate();
+
+    const {
+        model, setModel, error, setError, handleChangeField, handleBlurField
+    } = useValidarDadosLogin();
+
+    const { postData } = useApi();
+
+    const { gravarToken } = useAuth();
+
+    const onSubmitData = async (e) =>{
+        e.preventDefault();
+
+        console.log("Enviando model para Login:",model);
+
+        const data = await postData(LOGIN_SYS,model);
+
+        console.log(data)
+
+        if(data){
+            const{status, dados} =data;
+            if(status===200){
+                gravarToken(dados.access_token, dados.refresh_token)
+                setModel(LOGIN)
+                setError(ERROR_LOGIN)
+                navigate(DASHBOARD)
+            }
+            else{
+                console.log("Erro no Servidor - Login.js")
+            }
+        }
+    }
 
   return (
     <>

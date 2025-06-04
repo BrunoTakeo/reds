@@ -19,3 +19,17 @@ export const IMAGEM_TUTORIAL_JOGO = IMAGEM_COMO_JOGAR;
 export const IMAGEM_SETA_ESQ = IMAGEM_ARROW_LEFT;
 export const IMAGEM_SETA_DIR = IMAGEM_ARROW_RIGHT;
 export const IMAGEM_MAIS = IMAGEM_PLUS;
+
+// EXPORTANTO OS CARACTERES
+
+export const NUMBERS = '1234567890';
+export const UPPERCASE = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+export const LOWERCASE = 'abcdefghijklmnopqrstuvwxyz';
+export const SPECIAL_CHARACTERS = '!@^&()#çÇ:;';
+export const PASSWORD_LENGTH = 8;
+
+// EXPORTANDO OS TOKENS
+
+export const ACCESS_TOKEN = 'access_token'
+
+export const REFRESH_TOKEN = 'refresh_token'
